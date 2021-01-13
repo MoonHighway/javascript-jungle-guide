@@ -1,15 +1,16 @@
 import { lazy, Suspense } from "react";
 import { Link } from "react-router-dom";
 import { Centered, PrevNextBar } from "../ui";
-import { importMDX } from "mdx.macro";
 
-const HowToUseContent = lazy(() => importMDX("../book/How To Use.mdx"));
+const Content = lazy(() =>
+  import("!babel-loader!mdx-loader!../book/How To Use.mdx")
+);
 
 export default function HowToUse() {
   return (
     <Centered>
-      <Suspense fallback={<div>Loading...</div>}>
-        <HowToUseContent />
+      <Suspense fallback={<h1>loading</h1>}>
+        <Content />
       </Suspense>
       <PrevNextBar>
         <Link to="/TOC">Prev:Table of Contents</Link>

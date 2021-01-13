@@ -1,15 +1,16 @@
 import { lazy, Suspense } from "react";
 import { Link } from "react-router-dom";
 import { Centered, PrevNextBar } from "../ui";
-import { importMDX } from "mdx.macro";
 
-const OverviewContent = lazy(() => importMDX("../book/Overview.mdx"));
+const Content = lazy(() =>
+  import("!babel-loader!mdx-loader!../book/Overview.mdx")
+);
 
 export default function Overview() {
   return (
     <Centered>
-      <Suspense fallback={<div>Loading...</div>}>
-        <OverviewContent />
+      <Suspense fallback={<h1>loading</h1>}>
+        <Content />
       </Suspense>
       <PrevNextBar>
         <Link to="/HowToUse">Prev: How to use this guide</Link>
