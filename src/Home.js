@@ -12,6 +12,7 @@ export default function Home() {
       <img src={JSLogo} alt="JavaScript logo" />
       <img src={NodeJSLogo} alt="Node.js logo" />
       <Title>Welcome to the JavaScript Jungle</Title>
+      <h2>Teacher's Edition</h2>
       <Link to="/TOC">Start</Link>
       <img src={MHLogo} alt="Moon Highway logo" />
       <img src={PayPalLogo} alt="PayPal logo" />
