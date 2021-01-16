@@ -7,7 +7,7 @@
         { "title": "Slides", "length": 5 },
         {
           "title": "Environment Setup",
-          "topics": [
+          "agenda": [
             { "title": "install-vscode", "length": 3 },
             {
               "title": "student-files",
@@ -18,7 +18,7 @@
         },
         {
           "title": "Examine HTML, CSS",
-          "topics": [
+          "agenda": [
             {
               "title": "review-html",
               "required": true,
@@ -29,7 +29,7 @@
         },
         {
           "title": "Periodic Table Primitives",
-          "topics": [
+          "agenda": [
             {
               "title": "numbers",
               "length": 3,
