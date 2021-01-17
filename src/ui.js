@@ -11,7 +11,6 @@ export const PrevNextBar = styled.div`
 
 export const Centered = styled.div`
   width: 100%;
-  align-self: stretch;
   display: flex;
   flex-direction: column;
   justify-content: center;
