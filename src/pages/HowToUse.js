@@ -14,7 +14,9 @@ export default function HowToUse() {
       </Suspense>
       <PrevNextBar>
         <Link to="/TOC">Prev:Table of Contents</Link>
-        <Link to="/overview">Next:Course Overview</Link>
+        <Link to="/BookComponents">
+          Next:Book Components
+        </Link>
       </PrevNextBar>
     </Centered>
   );
