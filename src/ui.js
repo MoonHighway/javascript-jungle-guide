@@ -16,3 +16,10 @@ export const Centered = styled.div`
   justify-content: center;
   align-items: center;
 `;
+
+export const BookPage = styled.section`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+`;

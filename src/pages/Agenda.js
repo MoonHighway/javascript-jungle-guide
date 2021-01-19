@@ -1,71 +1,51 @@
-import { lazy, Suspense, useMemo } from "react";
+import { lazy, Suspense } from "react";
 import data from "../book/manifest.json";
 import { useParams, Link } from "react-router-dom";
-import { Centered, PrevNextBar } from "../ui";
+import { BookPage, PrevNextBar } from "../ui";
 
-function loadSection(route) {
-  if (!route) {
-    throw new Error(`loadSection(route) requires a route to load`);
-  }
+const isSection = (routes = []) => routes.length === 1;
 
-  if (!data || !data.agenda) {
-    throw new Error(`The manifest.json file must contain at least one agenda`);
-  }
-
-  const agenda = data.agenda.find(
-    (agenda) =>
-      agenda.title.toLowerCase() === route.replace("-", " ").toLowerCase()
-  );
-
-  if (!agenda) {
-    throw new Error(
-      `The manifest.json does not contain an agenda that matches route: ${route}`
+function useBookContent(path) {
+  const routes = path.split("/");
+  if (isSection(routes)) {
+    const [route] = routes;
+    const agenda = data.agenda.find(
+      (agenda) =>
+        agenda.title.toLowerCase() === route.replace("-", " ").toLowerCase()
     );
+    return {
+      title: agenda.title,
+      fileName: `${agenda.title}/README.md`,
+      previous: {
+        title: "Course Overview",
+        route: "/Overview",
+      },
+      next: {
+        title: "TODO",
+        route: "",
+      },
+    };
   }
-
-  return { agenda };
-}
-
-function useContent(path) {
-  const Content = useMemo(() => {
-    const routes = path.split("/");
-
-    // Load Section
-    if (routes.length === 1) {
-      const [route] = routes;
-      const { agenda } = loadSection(route);
-
-      return lazy(() =>
-        import(`!babel-loader!mdx-loader!../book/${agenda.title}/README.md`)
-      );
-    }
-  }, [path]);
-
-  return {
-    Content,
-    previous() {
-      return <Link to="">Previous</Link>;
-    },
-    next() {
-      return <Link to="">Next</Link>;
-    },
-  };
 }
 
 export default function Agenda() {
   let { path } = useParams();
-  const { Content, Prevous, Next } = useContent(path);
+  const { fileName, previous, next } = useBookContent(path);
+
+  const Content = lazy(() =>
+    import(`!babel-loader!mdx-loader!../book/${fileName}`)
+  );
 
   return (
-    <Centered>
+    <BookPage>
       <Suspense fallback={<h1>loading</h1>}>
         <Content />
       </Suspense>
       <PrevNextBar>
-        <Link to="/agenda/previous">Previous</Link>
+        <Link to={previous.route}>Back: {previous.title}</Link>
         <Link to="/">Home</Link>
-        <Link to="/agenda/next">Next</Link>
+        <Link to={next.route}>Next: {next.title}</Link>
       </PrevNextBar>
-    </Centered>
+    </BookPage>
   );
 }
