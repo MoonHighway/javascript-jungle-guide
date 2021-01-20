@@ -9,28 +9,26 @@ export default function TOC() {
     <Centered>
       <Container>
         <h1>TOC</h1>
-        {courseData.agenda.map(block => (
-          <div>
+        {courseData.agenda.map((block, i) => (
+          <div key={i}>
             <h2>
               {block.title} - {totalTime(block)} mins
             </h2>
             <hr />
             <ul>
               {block.agenda
-                ? block.agenda.map(item => (
-                    <li>
+                ? block.agenda.map((item, i) => (
+                    <li key={i}>
                       {item.title} - {totalTime(item)} mins
                     </li>
                   ))
-                : block.steps.map(step => <li>{step}</li>)}
+                : block.steps.map((step, i) => <li key={i}>{step}</li>)}
             </ul>
           </div>
         ))}
         <PrevNextBar>
           <Link to="/">Prev:Cover</Link>
-          <Link to="/HowToUse">
-            Next:How to use this guide
-          </Link>
+          <Link to="/HowToUse">Next:How to use this guide</Link>
         </PrevNextBar>
       </Container>
     </Centered>
