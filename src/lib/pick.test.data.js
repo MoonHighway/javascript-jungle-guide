@@ -1,167 +1,130 @@
-export default {
-  title: "JavaScript Jungle Teacher's Edition",
+export const deepData = {
+  title: "Course Level",
   agenda: [
     {
-      title: "Hello World",
+      title: "First Section",
       agenda: [
-        { title: "Intro Slides", length: 5 },
         {
-          title: "Environment Setup",
-          agenda: [
-            { title: "install-vscode", length: 3 },
-            {
-              title: "student-files",
-              required: true,
-              length: 2,
-            },
-          ],
-        },
-        {
-          title: "Examine HTML and CSS",
+          title: "First Topic",
           agenda: [
             {
-              title: "review-html",
-              required: true,
-              length: 2,
-            },
-            { title: "review-css", length: 3 },
-          ],
-        },
-        {
-          title: "Periodic Table Primitives",
-          agenda: [
-            {
-              title: "numbers",
-              length: 3,
-              steps: [
+              title: "Sub Topic",
+              agenda: [
                 {
-                  title: "add-script-to-page",
-                  required: true,
-                },
-                {
-                  title: "devtools-console",
-                  required: true,
-                },
-                {
-                  title: "numbers",
-                  required: true,
-                },
-                {
-                  title: "converting-floats-to-numbers",
-                },
-                {
-                  title: "math-constants",
-                },
-                {
-                  title: "random-number",
-                },
-              ],
-            },
-            {
-              title: "strings",
-              length: 4,
-              steps: [
-                {
-                  title: "creating-variables",
-                  required: true,
-                },
-                {
-                  title: "concatenation",
-                  required: true,
-                },
-                {
-                  title: "template-strings",
-                  required: true,
-                },
-                {
-                  title: "string-length",
-                },
-                {
-                  title: "whitespace",
-                },
-                {
-                  title: "string-functions",
-                },
-              ],
-            },
-            {
-              title: "booleans",
-              length: 3,
-              steps: [
-                {
-                  title: "if-else",
-                  required: true,
-                },
-                {
-                  title: "ternary-statements",
-                  required: true,
-                },
-                {
-                  title: "truthy-falsy",
-                  required: true,
-                },
-                {
-                  title: "not-a-number",
-                  required: true,
-                },
-                {
-                  title: "basic-comparison",
-                  required: true,
+                  title: "Sub Topic II",
+                  agenda: [
+                    {
+                      title: "Sub Topic III",
+                    },
+                  ],
                 },
               ],
             },
           ],
         },
-        { title: "Periodic Table Objects", length: 15 },
-        { title: "DOM Interaction", length: 10 },
-        { title: "Lab: Dot Click", length: 10 },
       ],
     },
     {
-      title: "Data Structures",
+      title: "Second Section",
       agenda: [
-        { title: "Install Node.js", length: 3 },
-        { title: "Array Samples", length: 12 },
         {
-          title: "Working with process.argv",
-          length: 10,
+          title: "Second Section First Topic",
         },
-        { title: "Object Samples", length: 15 },
         {
-          title: "Browser & Server Comparison",
-          length: 10,
+          title: "Second Section Second Topic",
         },
-        { title: "Lab: Objects & Arrays", length: 10 },
+        {
+          title: "Second Section Third Topic",
+        },
       ],
     },
     {
-      title: "HTTP",
+      title: "Third Section",
       agenda: [
-        { title: "HTTP Overview", length: 3 },
-        { title: "Function Samples", length: 7 },
-        { title: "Sync vs. Async Samples", length: 10 },
         {
-          title: "Exercise: Serving a Website",
-          length: 20,
+          title: "Third Section -First Topic",
+          agenda: [
+            {
+              title: "Sub Topic",
+              agenda: [
+                {
+                  title: "Sub Topic II",
+                  agenda: [
+                    {
+                      title: "Sub Topic III",
+                    },
+                  ],
+                },
+              ],
+            },
+          ],
         },
         {
-          title: "Exercise: Fetching Remote Data",
-          length: 15,
+          title: "Third Section Second Topic",
+          agenda: [
+            {
+              title: "Third Section Second Second Topic First Sub Topic",
+              agenda: [
+                {
+                  title: "Sub Topic II",
+                  agenda: [
+                    {
+                      title: "Sub Topic III",
+                    },
+                  ],
+                },
+              ],
+            },
+            {
+              title: "Third Section Second Sub Topic",
+              agenda: [
+                {
+                  title: "Sub Topic II",
+                  agenda: [
+                    {
+                      title: "Sub Topic III",
+                    },
+                  ],
+                },
+              ],
+            },
+            {
+              title: "Third Section Second Sub Topic",
+              agenda: [
+                {
+                  title: "Sub Topic II",
+                  agenda: [
+                    {
+                      title: "Fee",
+                    },
+                    {
+                      title: "Fi",
+                    },
+                    {
+                      title: "Fo",
+                    },
+                  ],
+                },
+              ],
+            },
+          ],
         },
       ],
     },
+  ],
+};
+
+export const shallowData = {
+  title: "Course Level",
+  agenda: [
     {
-      title: "Lab",
-      steps: [
-        "Serve the HTML File",
-        "Serve the CSS File",
-        "Serve the Image",
-        "Create a Variable for the Mood",
-        "Incorporate Readline",
-        "Change the Mood Readline",
-        "Quit from Readline",
-      ],
-      length: 30,
+      title: "First Section",
+    },
+    {
+      title: "Second Section",
+    },
+    {
+      title: "Third Section",
     },
   ],
 };
