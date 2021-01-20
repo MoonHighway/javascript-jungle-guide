@@ -3,22 +3,14 @@ import data from "../book/manifest.json";
 import { Link, useLocation } from "react-router-dom";
 import { BookPage, PrevNextBar } from "../ui";
 
-//
-// TODO: REPLACE - with " " Globally
-//
-
-//
-// TODO: Name md Files exactally after topic title (NO - infile name)
-//
-
 const pathToAgenda = (path) =>
   path.split("/").filter((r) => r && r !== "agenda");
 
 const toUrl = (...args) =>
-  args.map((a) => a.trim().replace(" ", "-").toLowerCase()).join("/");
+  args.map((a) => a.trim().replace(/ /g, "-").toLowerCase()).join("/");
 
 const checkTitleAgainst = (val) => (obj) =>
-  obj.title.toLowerCase() === val.replace("-", " ").toLowerCase();
+  obj.title.toLowerCase() === val.replace(/-/g, " ").toLowerCase();
 
 const findTopic = (agenda = [], topicName) => {
   const index = agenda.findIndex(checkTitleAgainst(topicName));
@@ -77,7 +69,9 @@ function useBookContent(path) {
   }
 
   //
-  // TODO: Dynamically populate the next and previous links
+  // TODO: Handle next when subtopic is out of scope
+  //
+  //  - Go to the next topic
   //
 
   if (!stepName) {
@@ -85,19 +79,41 @@ function useBookContent(path) {
     let prev = topic.agenda[subTopicIndex - 1];
 
     if (!next) {
+      let nextTopic = agenda.agenda[topicIndex + 1];
+      let nextSubTopic = nextTopic.agenda ? nextTopic.agenda[0] : nextTopic;
+
       next = {
-        title: "HOLD",
-        route: "",
+        title: nextTopic.title,
+        route: `/agenda/${toUrl(
+          agenda.title,
+          nextTopic.title,
+          nextSubTopic.title
+        )}`,
       };
     }
 
     if (!prev) {
       const prevTopic = agenda.agenda[topicIndex - 1];
-      prev = {
-        title: prevTopic.title,
-        route: `/agenda/${toUrl(agenda.title, prevTopic.title)}`,
-      };
+
+      if (prevTopic.agenda) {
+        const [prevSubTopic] = [...prevTopic.agenda].reverse();
+        prev = {
+          title: prevSubTopic.title,
+          route: `/agenda/${toUrl(
+            agenda.title,
+            prevTopic.title,
+            prevSubTopic.title
+          )}`,
+        };
+      } else {
+        prev = {
+          title: prevTopic.title,
+          route: `/agenda/${toUrl(agenda.title, prevTopic.title)}`,
+        };
+      }
     }
+
+    console.log(`${agenda.title}/${topic.title}/${subTopicName}.md`);
 
     return {
       fileName: `${agenda.title}/${topic.title}/${subTopicName}.md`,
@@ -109,14 +125,12 @@ function useBookContent(path) {
       },
       next: {
         title: next.title,
-        route: `/agenda/${toUrl(agenda.title, topic.title, next.title)}`,
+        route:
+          next.route ||
+          `/agenda/${toUrl(agenda.title, topic.title, next.title)}`,
       },
     };
   }
-
-  //
-  // TODO: Load a Step
-  //
 }
 
 export default function Agenda() {
