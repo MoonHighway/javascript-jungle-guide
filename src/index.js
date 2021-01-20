@@ -1,9 +1,5 @@
 import React from "react";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route
-} from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { render } from "react-dom";
 import { GlobalStyle } from "./theme";
 import Cover from "./pages/Cover";
@@ -18,7 +14,7 @@ render(
     <GlobalStyle />
     <Router>
       <Switch>
-        <Route path="/Agenda/:name">
+        <Route path="/Agenda/:path">
           <Agenda />
         </Route>
         <Route path="/TOC">

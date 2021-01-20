@@ -13,12 +13,8 @@ export default function Overview() {
         <Content />
       </Suspense>
       <PrevNextBar>
-        <Link to="/BookComponents">
-          Prev: Book Components
-        </Link>
-        <Link to="/agenda/Hello World">
-          Start "Hello World"
-        </Link>
+        <Link to="/BookComponents">Prev: Book Components</Link>
+        <Link to="/agenda/hello-world">Start "Hello World"</Link>
       </PrevNextBar>
     </Centered>
   );
