@@ -12,19 +12,18 @@ const toUrl = (...args) =>
 const checkTitleAgainst = (val) => (obj) =>
   obj.title.toLowerCase() === val.replace("-", " ").toLowerCase();
 
-const findIndicesAllAround = (list, item) => {
-  const index = list.findIndex((i) => i.title === item.title);
-  return [
-    index <= list.length ? index + 1 : null,
-    index === 0 ? null : index - 1,
-  ];
+const findTopic = (agenda = [], topicName) => {
+  const index = agenda.findIndex(checkTitleAgainst(topicName));
+  return [agenda[index], index];
 };
 
 function useBookContent(path) {
   const routes = pathToAgenda(path);
   const [sectionName, topicName, subTopicName, stepName] = routes;
   const agenda = data.agenda.find(checkTitleAgainst(sectionName));
-  const topic = topicName && agenda.agenda.find(checkTitleAgainst(topicName));
+  const [topic, topicIndex] = topicName
+    ? findTopic(agenda.agenda, topicName)
+    : [null, null];
 
   if (!topicName) {
     const [topic] = agenda.agenda;
@@ -42,19 +41,46 @@ function useBookContent(path) {
   }
 
   if (!subTopicName) {
+    const nextTopic = agenda.agenda[topicIndex + 1];
+    const [nextSubTopic] = nextTopic.agenda;
     return {
-      title: "Holder",
       fileName: `${agenda.title}/${topic.title}/README.md`,
       previous: {
         title: agenda.title,
         route: `/agenda/${toUrl(agenda.title)}`,
       },
       next: {
-        title: "HOLD",
-        route: "",
+        title: nextSubTopic.title,
+        route: `/agenda/${toUrl(
+          agenda.title,
+          nextTopic.title,
+          nextSubTopic.title
+        )}`,
       },
     };
   }
+
+  //
+  // TODO: Dynamically populate the next and previous links
+  //
+
+  if (!stepName) {
+    return {
+      fileName: `${agenda.title}/${topic.title}/${subTopicName}.md`,
+      previous: {
+        title: "Intro Slides",
+        route: `/agenda/hello-world/environment-setup/student-files`,
+      },
+      next: {
+        title: `Intro Slides`,
+        route: `/agenda/hello-world/intro-slides`,
+      },
+    };
+  }
+
+  //
+  // TODO: Load a Step
+  //
 }
 
 export default function Agenda() {
