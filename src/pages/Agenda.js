@@ -3,6 +3,14 @@ import data from "../book/manifest.json";
 import { Link, useLocation } from "react-router-dom";
 import { BookPage, PrevNextBar } from "../ui";
 
+//
+// TODO: REPLACE - with " " Globally
+//
+
+//
+// TODO: Name md Files exactally after topic title (NO - infile name)
+//
+
 const pathToAgenda = (path) =>
   path.split("/").filter((r) => r && r !== "agenda");
 
@@ -17,12 +25,20 @@ const findTopic = (agenda = [], topicName) => {
   return [agenda[index], index];
 };
 
+const findSubTopic = (agenda = [], subTopicName) => {
+  const index = agenda.findIndex((st) => st.title === subTopicName);
+  return [agenda[index], index];
+};
+
 function useBookContent(path) {
   const routes = pathToAgenda(path);
   const [sectionName, topicName, subTopicName, stepName] = routes;
   const agenda = data.agenda.find(checkTitleAgainst(sectionName));
   const [topic, topicIndex] = topicName
     ? findTopic(agenda.agenda, topicName)
+    : [null, null];
+  const [subTopic, subTopicIndex] = subTopicName
+    ? findSubTopic(topic.agenda, subTopicName)
     : [null, null];
 
   if (!topicName) {
@@ -65,15 +81,35 @@ function useBookContent(path) {
   //
 
   if (!stepName) {
+    let next = topic.agenda[subTopicIndex + 1];
+    let prev = topic.agenda[subTopicIndex - 1];
+
+    if (!next) {
+      next = {
+        title: "HOLD",
+        route: "",
+      };
+    }
+
+    if (!prev) {
+      const prevTopic = agenda.agenda[topicIndex - 1];
+      prev = {
+        title: prevTopic.title,
+        route: `/agenda/${toUrl(agenda.title, prevTopic.title)}`,
+      };
+    }
+
     return {
       fileName: `${agenda.title}/${topic.title}/${subTopicName}.md`,
       previous: {
-        title: "Intro Slides",
-        route: `/agenda/hello-world/environment-setup/student-files`,
+        title: prev.title,
+        route:
+          prev.route ||
+          `/agenda/${toUrl(agenda.title, topic.title, prev.title)}`,
       },
       next: {
-        title: `Intro Slides`,
-        route: `/agenda/hello-world/intro-slides`,
+        title: next.title,
+        route: `/agenda/${toUrl(agenda.title, topic.title, next.title)}`,
       },
     };
   }
