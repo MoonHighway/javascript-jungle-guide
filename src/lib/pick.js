@@ -1,7 +1,22 @@
-export function pick(obj) {
+const urlFriendly = (str) => str.trim().toLowerCase().replace(/ /g, "-");
+
+const searchByTitle = (location) => ({ title }) =>
+  urlFriendly(title) === urlFriendly(location);
+
+export function pick(obj, ...path) {
+  const [location, ...rest] = path;
+
+  if (!rest.length) {
+    return obj.agenda.find(searchByTitle(location));
+  }
+
+  return obj;
+}
+
+export function pickFirst(obj) {
   if (obj.agenda && obj.agenda.length) {
     const [topic] = obj.agenda;
-    return pick(topic);
+    return pickFirst(topic);
   }
   return obj;
 }
