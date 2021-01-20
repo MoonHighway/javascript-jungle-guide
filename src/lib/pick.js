@@ -1,3 +1,4 @@
-export function pick() {
-  return "waiting";
+export function pick(manifest) {
+  const [topic] = manifest.agenda;
+  return topic;
 }
