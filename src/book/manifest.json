@@ -4,7 +4,8 @@
     {
       "title": "Hello World",
       "agenda": [
-        { "title": "Intro Slides", "length": 5 },
+        { "title": "Chapter Overview" },
+        { "title": "Intro Slides", "length": 5, "fileName": "README.md" },
         {
           "title": "Environment Setup",
           "agenda": [
