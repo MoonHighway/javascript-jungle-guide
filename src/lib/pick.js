@@ -228,7 +228,20 @@ export const pickNext = (function () {
       return result;
     }
 
-    const nextTopic = obj.agenda[index + 1];
+    let nextTopic = obj.agenda[index + 1];
+
+    // If the current topic still has an agenda
+    if (nextTopic.agenda) {
+      // Dive into that agenda to re-treive the first topic
+      let [t, r] = pickFirst(nextTopic);
+      const result = [t, [...route, r].join("/")];
+      route = [];
+      tree = [];
+
+      // Return this new sub topic along wiht the route
+      return result;
+    }
+
     route.push(urlFriendly(nextTopic.title));
     const result = [nextTopic, route.join("/")];
     route = [];
@@ -289,9 +302,18 @@ export const pickPrevious = (function () {
       return result;
     }
 
-    const nextTopic = obj.agenda[index - 1];
-    route.push(urlFriendly(nextTopic.title));
-    const result = [nextTopic, route.join("/")];
+    let prevTopic = obj.agenda[index - 1];
+
+    if (prevTopic.agenda) {
+      let [t, r] = pickLast(prevTopic);
+      const result = [t, [...route, r].join("/")];
+      route = [];
+      tree = [];
+      return result;
+    }
+
+    route.push(urlFriendly(prevTopic.title));
+    const result = [prevTopic, route.join("/")];
     route = [];
     tree = [];
     return result;

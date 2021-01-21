@@ -2,7 +2,7 @@ import { lazy, Suspense } from "react";
 import courseAgenda from "../book/manifest.json";
 import { Link, useLocation } from "react-router-dom";
 import { BookPage, PrevNextBar } from "../ui";
-import { pick, pickPrevious, pickNext, pickFirst } from "../lib";
+import { pickPrevious, pickNext } from "../lib";
 
 //
 // TODO: Step through entire hello world section
@@ -11,12 +11,12 @@ import { pick, pickPrevious, pickNext, pickFirst } from "../lib";
 //    - [x] Initial Page Previous
 //    - [x] Initial Page Next
 //
-//    - [ ] Display Slides Page
-//    - [ ] Slides Page Previous
-//    - [ ] Slides Page Next
+//    - [x] Display Slides Page
+//    - [x] Slides Page Previous
+//    - [x] Slides Page Next
 //
-//    - [ ] Display Environment Setup Pages
-//    - [ ] Display Examine HTML Pages
+//    - [x] Display Environment Setup Pages
+//    - [x] Display Examine HTML Pages
 //    - [ ] Display Periodic Table Primitives Pages
 //
 //    - [ ] Stage Periodic Table Objects files
