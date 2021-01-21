@@ -6,6 +6,7 @@ import Cover from "./pages/Cover";
 import Agenda from "./pages/Agenda";
 import HowToUse from "./pages/HowToUse";
 import Overview from "./pages/Overview";
+import End from "./pages/End";
 import TOC from "./pages/TOC";
 import BookComponents from "./pages/BookComponents";
 
@@ -28,6 +29,9 @@ render(
         </Route>
         <Route path="/Overview">
           <Overview />
+        </Route>
+        <Route path="/End">
+          <End />
         </Route>
         <Route path="/">
           <Cover />
