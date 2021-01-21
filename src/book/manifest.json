@@ -33,7 +33,7 @@
             {
               "title": "numbers",
               "length": 3,
-              "steps": [
+              "agenda": [
                 {
                   "title": "add-script-to-page",
                   "required": true
@@ -60,7 +60,7 @@
             {
               "title": "strings",
               "length": 4,
-              "steps": [
+              "agenda": [
                 {
                   "title": "creating-variables",
                   "required": true
@@ -87,7 +87,7 @@
             {
               "title": "booleans",
               "length": 3,
-              "steps": [
+              "agenda": [
                 {
                   "title": "if-else",
                   "required": true
@@ -152,14 +152,14 @@
     },
     {
       "title": "Lab",
-      "steps": [
-        "Serve the HTML File",
-        "Serve the CSS File",
-        "Serve the Image",
-        "Create a Variable for the Mood",
-        "Incorporate Readline",
-        "Change the Mood Readline",
-        "Quit from Readline"
+      "agenda": [
+        { "title": "Serve the HTML File" },
+        { "title": "Serve the CSS File" },
+        { "title": "Serve the Image" },
+        { "title": "Create a Variable for the Mood" },
+        { "title": "Incorporate Readline" },
+        { "title": "Change the Mood Readline" },
+        { "title": "Quit from Readline" }
       ],
       "length": 30
     }
