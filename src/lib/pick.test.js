@@ -288,17 +288,17 @@ describe("pickPrev() function", () => {
     });
   });
 
-  describe("when there is no more previoius", () => {
+  describe("when there is no more previous", () => {
     let topic, route;
 
     beforeAll(() => {
-      [topic, route] = pickNext(
+      [topic, route] = pickPrevious(
         deepData,
-        "third-section",
-        "getting-warm",
-        "warmer-topic",
-        "under-topic",
-        "fo"
+        "first-section",
+        "first-topic",
+        "sub-topic",
+        "sub-topic-ii",
+        "sub-topic-iii"
       );
     });
 
