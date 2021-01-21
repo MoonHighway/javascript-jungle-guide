@@ -28,7 +28,7 @@ export default function TOC() {
         ))}
         <PrevNextBar>
           <Link to="/">Prev:Cover</Link>
-          <Link to="/HowToUse">Next:How to use this guide</Link>
+          <Link to="/how-to-use">Next:How to use this guide</Link>
         </PrevNextBar>
       </Container>
     </Centered>

@@ -15,22 +15,22 @@ render(
     <GlobalStyle />
     <Router>
       <Switch>
-        <Route path="/Agenda/:path">
+        <Route path="/agenda/:path">
           <Agenda />
         </Route>
-        <Route path="/TOC">
+        <Route path="/toc">
           <TOC />
         </Route>
-        <Route path="/HowToUse">
+        <Route path="/how-to-use">
           <HowToUse />
         </Route>
-        <Route path="/BookComponents">
+        <Route path="/book-components">
           <BookComponents />
         </Route>
-        <Route path="/Overview">
+        <Route path="/overview">
           <Overview />
         </Route>
-        <Route path="/End">
+        <Route path="/end">
           <End />
         </Route>
         <Route path="/">

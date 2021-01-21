@@ -30,7 +30,7 @@ export default function Cover() {
         <h2>Teachers Edition</h2>
       </Title>
       <Start>
-        <Link to="/TOC">Start</Link>
+        <Link to="/toc">Start</Link>
       </Start>
     </Content>
   );

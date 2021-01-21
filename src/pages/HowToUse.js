@@ -4,7 +4,7 @@ import { Centered, PrevNextBar } from "../ui";
 import styled from "styled-components";
 
 const Content = lazy(() =>
-  import("!babel-loader!mdx-loader!../book/How To Use.mdx")
+  import("!babel-loader!mdx-loader!../book/how-to-use.md")
 );
 
 export default function HowToUse() {
@@ -15,10 +15,8 @@ export default function HowToUse() {
           <Content />
         </Suspense>
         <PrevNextBar>
-          <Link to="/TOC">Prev:Table of Contents</Link>
-          <Link to="/BookComponents">
-            Next:Book Components
-          </Link>
+          <Link to="/toc">Prev:Table of Contents</Link>
+          <Link to="/book-components">Next:Book Components</Link>
         </PrevNextBar>
       </Container>
     </Centered>

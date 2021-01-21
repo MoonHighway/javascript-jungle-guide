@@ -1,4 +1,4 @@
-import plates from "./images/spinning-plates.png";
+import plates from "./\_assets/images/spinning-plates.png";
 
 # How to Use This Guide
 

@@ -30,35 +30,12 @@ import { pick, pickPrevious, pickNext, pickFirst } from "../lib";
 //    - [ ] Display Data Structures Readme and HOLD
 //
 
-const isSection = (path = []) => path.length === 1;
-
-const isReadme = ({ title }) => title.toLowerCase().match(/slides/);
-
-const toFilePath = (path) =>
-  path
-    .map((location) =>
-      location
-        .toLowerCase()
-        .replace(/\b[a-z](?=[a-z]{2})/g, function (letter) {
-          return letter.toUpperCase();
-        })
-        .replace(/-/g, " ")
-    )
-    .join("/");
-
 function useBookContent(path = []) {
   const topic = pick(courseAgenda, ...path);
-
-  if (isSection(path)) {
-    return [
-      topic.title + "/README.md",
-      pickPrevious(topic, ...path),
-      pickFirst(topic),
-    ];
-  }
-
+  console.log(path);
+  //const p = pickPrevious(topic, ...path);
   return [
-    `${toFilePath(path)}/README.md`,
+    `${path.join("/")}.md`,
     [{ title: "HOLD" }, ""],
     [{ title: "HOLD" }, ""],
   ];
