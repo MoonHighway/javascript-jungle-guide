@@ -113,9 +113,57 @@
             }
           ]
         },
-        { "title": "Periodic Table Objects", "length": 15 },
-        { "title": "DOM Interaction", "length": 10 },
-        { "title": "Lab: Dot Click", "length": 10 }
+        {
+          "title": "Periodic Table Objects",
+          "agenda": [
+            {
+              "title": "Intro to Arrays",
+              "length": 2,
+              "agenda": [
+                { "title": "move-script", "required": true },
+                { "title": "declaring-arrays", "required": true },
+                { "title": "set-array-values", "required": true },
+                { "title": "push-pop", "required": false },
+                { "title": "store-anything", "required": false },
+                { "title": "multi-dimensional-arrays", "required": false }
+              ]
+            },
+            {
+              "title": "Intro to Objects",
+              "length": 5,
+              "agenda": [
+                { "title": "declaring-objects", "required": true },
+                { "title": "dot-notation", "required": true },
+                { "title": "literal-notation", "required": true },
+                { "title": "array-of-objects", "required": true },
+                { "title": "nesting-objects", "required": false },
+                { "title": "adding-arrays-to-objects", "required": false },
+                { "title": "push-object-into-array", "required": false }
+              ]
+            },
+            {
+              "title": "Intro to Functions",
+              "length": 5,
+              "agenda": [
+                { "title": "declaring-functions", "required": true },
+                { "title": "hoisting", "required": true },
+                { "title": "functions-as-values", "required": true },
+                { "title": "function-arguments", "required": true },
+                { "title": "default-arguments", "required": true },
+                { "title": "arrow-functions", "required": true },
+                { "title": "anonymous-functions", "required": false },
+                { "title": "setting-window-onload", "required": false },
+                { "title": "first-last-challenge", "required": false }
+              ]
+            },
+            {
+              "title": "Questions and Answers",
+              "length": 4
+            }
+          ]
+        },
+        { "title": "DOM Interaction", "length": 10, "agenda": [] },
+        { "title": "Lab: Dot Click", "length": 10, "agenda": [] }
       ]
     },
     {

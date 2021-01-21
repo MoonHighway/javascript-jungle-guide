@@ -1,0 +1,1 @@
+# Arrays can store anything
