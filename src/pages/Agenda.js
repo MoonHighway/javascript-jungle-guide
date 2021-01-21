@@ -36,7 +36,7 @@ function useBookContent(path = []) {
   //const p = pickPrevious(topic, ...path);
   return [
     `${path.join("/")}.md`,
-    [{ title: "HOLD" }, ""],
+    [{ title: "Overview" }, "/overview"],
     [{ title: "HOLD" }, ""],
   ];
 }
