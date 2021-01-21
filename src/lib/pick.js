@@ -296,10 +296,13 @@ export const pickPrevious = (function () {
       const lastSection = lastTree[n - 1];
 
       // This use pick last to dive deep into that section and pick the last leaf topic
-      const result = pickLast(lastSection);
+      const [pTopic, pRoute] = pickLast(lastSection);
+      route.push(pRoute);
+      const results = [pTopic, route.join("/")];
+
       route = [];
       tree = [];
-      return result;
+      return results;
     }
 
     let prevTopic = obj.agenda[index - 1];
