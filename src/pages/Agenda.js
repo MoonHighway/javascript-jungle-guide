@@ -31,14 +31,24 @@ import { pick, pickPrevious, pickNext, pickFirst } from "../lib";
 //
 
 function useBookContent(path = []) {
-  const topic = pick(courseAgenda, ...path);
+  let [pTopic, pRoute] = pickPrevious(courseAgenda, ...path);
+  let [nTopic, nRoute] = pickNext(courseAgenda, ...path);
   console.log(path);
-  //const p = pickPrevious(topic, ...path);
-  return [
-    `${path.join("/")}.md`,
-    [{ title: "Overview" }, "/overview"],
-    [{ title: "HOLD" }, ""],
-  ];
+  if (!pTopic) {
+    pTopic = { title: "Course Overview" };
+    pRoute = "/overview";
+  } else {
+    pRoute = `/agenda/${pRoute}`;
+  }
+
+  if (!nTopic) {
+    nTopic = { title: "End Course" };
+    nRoute = "/end";
+  } else {
+    nRoute = `/agenda/${nRoute}`;
+  }
+
+  return [`${path.join("/")}.md`, [pTopic, pRoute], [nTopic, nRoute]];
 }
 
 export default function Agenda() {
@@ -57,13 +67,9 @@ export default function Agenda() {
         <Content />
       </Suspense>
       <PrevNextBar>
-        <Link to={pRoute || "/Overview"}>
-          Back: {pTopic ? pTopic.title : "Course Overview"}
-        </Link>
+        <Link to={pRoute}>Back: {pTopic.title}</Link>
         <Link to="/">Home</Link>
-        <Link to={nRoute || "/End"}>
-          Next: {nTopic ? nTopic.title : "End Course"}
-        </Link>
+        <Link to={nRoute}>Next: {nTopic.title}</Link>
       </PrevNextBar>
     </BookPage>
   );

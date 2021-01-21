@@ -267,7 +267,7 @@ export const pickPrevious = (function () {
 
     // The big difference here is that we are decrementing the index
     // So when we are on the first topic we have to look up the tree
-    if (index - 1 <= 0) {
+    if (index - 1 < 0) {
       // Climb the tree until we find a topic that is not the first topic
       // in the agenda
       let [n, lastTree, lastRoute] = climb();
