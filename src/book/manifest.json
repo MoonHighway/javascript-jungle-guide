@@ -193,18 +193,147 @@
     {
       "title": "Data Structures",
       "agenda": [
-        { "title": "Install Node.js", "length": 3 },
-        { "title": "Array Samples", "length": 12 },
         {
-          "title": "Working with process.argv",
-          "length": 10
+          "title": "Install Node",
+          "length": 3,
+          "agenda": [
+            {
+              "title": "check-version",
+              "required": true
+            },
+            {
+              "title": "installing-node",
+              "required": true
+            },
+            {
+              "title": "running-a-file",
+              "required": true
+            }
+          ]
         },
-        { "title": "Object Samples", "length": 15 },
         {
-          "title": "Browser & Server Comparison",
-          "length": 10
+          "title": "Array Samples",
+          "length": 12,
+          "agenda": [
+            {
+              "title": "overview",
+              "required": true
+            },
+            {
+              "title": "the-array-type",
+              "required": true
+            },
+            {
+              "title": "initializing-with-values",
+              "required": true
+            },
+            {
+              "title": "storing-values",
+              "required": false
+            },
+            {
+              "title": "for-loops",
+              "required": false
+            },
+            {
+              "title": "more-loops",
+              "required": false
+            },
+            {
+              "title": "split-join",
+              "required": true
+            },
+            {
+              "title": "push-pop",
+              "required": true
+            },
+            {
+              "title": "shift-unshift",
+              "required": false
+            },
+            {
+              "title": "splicing-arrays",
+              "required": false
+            }
+          ]
         },
-        { "title": "Lab: Objects & Arrays", "length": 10 }
+        {
+          "title": "Working with process argv",
+          "length": 10,
+          "agenda": [
+            {
+              "title": "process-argv-intro",
+              "required": true
+            },
+            {
+              "title": "working-with-flags",
+              "required": true
+            },
+            {
+              "title": "node-age-check",
+              "required": false
+            }
+          ]
+        },
+        {
+          "title": "Object Samples",
+          "length": 15,
+          "agenda": [
+            {
+              "title": "object-literal-notation",
+              "required": true
+            },
+            {
+              "title": "print-method",
+              "required": true
+            },
+            {
+              "title": "keys-and-brackets",
+              "required": true
+            },
+            {
+              "title": "using-fields",
+              "required": false
+            },
+            {
+              "title": "converting-to-json",
+              "required": false
+            },
+            {
+              "title": "destructuring",
+              "required": true
+            },
+            {
+              "title": "spread-operator",
+              "required": true
+            },
+            {
+              "title": "using-a-factory",
+              "required": false
+            }
+          ]
+        },
+        {
+          "title": "Browser Server Comparison",
+          "length": 10,
+          "agenda": [
+            {
+              "title": "collecting-input",
+              "required": true
+            },
+            {
+              "title": "universal-isomorphic",
+              "required": false
+            }
+          ]
+        },
+        {
+          "title": "Lab Objects and Arrays",
+          "length": 10,
+          "agenda": [
+            { "title": "lab-overview", "required": true }
+          ]
+        }
       ]
     },
     {
