@@ -1,3 +1,7 @@
 # Add Script to Page
 
-TODO: Numbers/strings/booleans/
+(1) Add a Script tag to the page (code there).
+
+```html
+<script></script>
+```

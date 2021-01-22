@@ -40,11 +40,11 @@
                   "required": true
                 },
                 {
-                  "title": "devtools-console",
+                  "title": "numbers",
                   "required": true
                 },
                 {
-                  "title": "numbers",
+                  "title": "devtools-console",
                   "required": true
                 },
                 {
@@ -120,45 +120,105 @@
               "title": "Intro to Arrays",
               "length": 2,
               "agenda": [
-                { "title": "move-script", "required": true },
-                { "title": "declaring-arrays", "required": true },
-                { "title": "set-array-values", "required": true },
+                {
+                  "title": "move-script",
+                  "required": true
+                },
+                {
+                  "title": "declaring-arrays",
+                  "required": true
+                },
+                {
+                  "title": "set-array-values",
+                  "required": true
+                },
                 { "title": "push-pop", "required": false },
-                { "title": "store-anything", "required": false },
-                { "title": "multi-dimensional-arrays", "required": false }
+                {
+                  "title": "store-anything",
+                  "required": false
+                },
+                {
+                  "title": "multi-dimensional-arrays",
+                  "required": false
+                }
               ]
             },
             {
               "title": "Intro to Objects",
               "length": 5,
               "agenda": [
-                { "title": "declaring-objects", "required": true },
-                { "title": "dot-notation", "required": true },
-                { "title": "literal-notation", "required": true },
-                { "title": "array-of-objects", "required": true },
-                { "title": "nesting-objects", "required": false },
-                { "title": "adding-arrays-to-objects", "required": false },
-                { "title": "push-object-into-array", "required": false }
+                {
+                  "title": "declaring-objects",
+                  "required": true
+                },
+                {
+                  "title": "dot-notation",
+                  "required": true
+                },
+                {
+                  "title": "literal-notation",
+                  "required": true
+                },
+                {
+                  "title": "array-of-objects",
+                  "required": true
+                },
+                {
+                  "title": "nesting-objects",
+                  "required": false
+                },
+                {
+                  "title": "adding-arrays-to-objects",
+                  "required": false
+                },
+                {
+                  "title": "push-object-into-array",
+                  "required": false
+                }
               ]
             },
             {
               "title": "Intro to Functions",
               "length": 5,
               "agenda": [
-                { "title": "declaring-functions", "required": true },
+                {
+                  "title": "declaring-functions",
+                  "required": true
+                },
                 { "title": "hoisting", "required": true },
-                { "title": "functions-as-values", "required": true },
-                { "title": "function-arguments", "required": true },
-                { "title": "default-arguments", "required": true },
-                { "title": "arrow-functions", "required": true },
-                { "title": "anonymous-functions", "required": false },
-                { "title": "setting-window-onload", "required": false },
-                { "title": "first-last-challenge", "required": false }
+                {
+                  "title": "functions-as-values",
+                  "required": true
+                },
+                {
+                  "title": "function-arguments",
+                  "required": true
+                },
+                {
+                  "title": "default-arguments",
+                  "required": true
+                },
+                {
+                  "title": "arrow-functions",
+                  "required": true
+                },
+                {
+                  "title": "anonymous-functions",
+                  "required": false
+                },
+                {
+                  "title": "setting-window-onload",
+                  "required": false
+                },
+                {
+                  "title": "first-last-challenge",
+                  "required": false
+                }
               ]
             },
             {
               "title": "Questions and Answers",
-              "length": 4
+              "length": 3
             }
           ]
         },
@@ -169,12 +229,24 @@
             { "title": "create-date", "required": true },
             { "title": "set-date", "required": true },
             { "title": "subtract-years", "required": true },
-            { "title": "working-dom-elements", "required": true },
-            { "title": "working-dom-form", "required": true },
+            {
+              "title": "working-dom-elements",
+              "required": true
+            },
+            {
+              "title": "working-dom-form",
+              "required": true
+            },
             { "title": "calc-results", "required": false },
             { "title": "edge-cases", "required": false },
-            { "title": "improve-results", "required": false },
-            { "title": "display-results", "required": false },
+            {
+              "title": "improve-results",
+              "required": false
+            },
+            {
+              "title": "display-results",
+              "required": false
+            },
             { "title": "save-results", "required": false }
           ]
         },
@@ -193,32 +265,275 @@
     {
       "title": "Data Structures",
       "agenda": [
-        { "title": "Install Node.js", "length": 3 },
-        { "title": "Array Samples", "length": 12 },
+        { "title": "Chapter Overview" },
         {
-          "title": "Working with process.argv",
-          "length": 10
+          "title": "Install Node",
+          "length": 3,
+          "agenda": [
+            {
+              "title": "check-version",
+              "required": true
+            },
+            {
+              "title": "installing-node",
+              "required": true
+            },
+            {
+              "title": "running-a-file",
+              "required": true
+            }
+          ]
         },
-        { "title": "Object Samples", "length": 15 },
         {
-          "title": "Browser & Server Comparison",
-          "length": 10
+          "title": "Array Samples",
+          "length": 12,
+          "agenda": [
+            {
+              "title": "overview",
+              "required": true
+            },
+            {
+              "title": "the-array-type",
+              "required": true
+            },
+            {
+              "title": "initializing-with-values",
+              "required": true
+            },
+            {
+              "title": "storing-values",
+              "required": false
+            },
+            {
+              "title": "for-loops",
+              "required": false
+            },
+            {
+              "title": "more-loops",
+              "required": false
+            },
+            {
+              "title": "split-join",
+              "required": true
+            },
+            {
+              "title": "push-pop",
+              "required": true
+            },
+            {
+              "title": "shift-unshift",
+              "required": false
+            },
+            {
+              "title": "splicing-arrays",
+              "required": false
+            }
+          ]
         },
-        { "title": "Lab: Objects & Arrays", "length": 10 }
+        {
+          "title": "Working with process argv",
+          "length": 10,
+          "agenda": [
+            {
+              "title": "process-argv-intro",
+              "required": true
+            },
+            {
+              "title": "working-with-flags",
+              "required": true
+            },
+            {
+              "title": "node-age-check",
+              "required": false
+            }
+          ]
+        },
+        {
+          "title": "Object Samples",
+          "length": 15,
+          "agenda": [
+            {
+              "title": "object-literal-notation",
+              "required": true
+            },
+            {
+              "title": "print-method",
+              "required": true
+            },
+            {
+              "title": "keys-and-brackets",
+              "required": true
+            },
+            {
+              "title": "using-fields",
+              "required": false
+            },
+            {
+              "title": "converting-to-json",
+              "required": false
+            },
+            {
+              "title": "destructuring",
+              "required": true
+            },
+            {
+              "title": "spread-operator",
+              "required": true
+            },
+            {
+              "title": "using-a-factory",
+              "required": false
+            }
+          ]
+        },
+        {
+          "title": "Browser Server Comparison",
+          "length": 10,
+          "agenda": [
+            {
+              "title": "collecting-input",
+              "required": true
+            },
+            {
+              "title": "universal-isomorphic",
+              "required": false
+            }
+          ]
+        },
+        {
+          "title": "Lab Objects and Arrays",
+          "length": 10,
+          "agenda": [
+            { "title": "lab-overview", "required": true }
+          ]
+        }
       ]
     },
     {
       "title": "HTTP",
       "agenda": [
-        { "title": "HTTP Overview", "length": 3 },
-        { "title": "Function Samples", "length": 7 },
-        { "title": "Sync vs. Async Samples", "length": 10 },
+        { "title": "Chapter Overview" },
+        { "title": "HTTP Slides", "length": 5 },
         {
-          "title": "Exercise: Serving a Website",
-          "length": 20
+          "title": "Asynchronous JavaScript",
+          "agenda": [
+            {
+              "title": "functions",
+              "length": 5,
+              "agenda": [
+                {
+                  "title": "functions-as-arguments",
+                  "required": true
+                },
+                {
+                  "title": "destructuring-objects",
+                  "required": true
+                },
+                {
+                  "title": "functions-as-methods",
+                  "required": false
+                },
+                {
+                  "title": "passing-info-back",
+                  "required": false
+                }
+              ]
+            },
+            {
+              "title": "timing-functions",
+              "length": 4,
+              "agenda": [
+                {
+                  "title": "timing-functions",
+                  "required": true
+                },
+                {
+                  "title": "settimeout-setinterval",
+                  "required": false
+                }
+              ]
+            },
+            {
+              "title": "fetch",
+              "length": 4,
+              "agenda": [
+                {
+                  "title": "using-fetch",
+                  "required": true
+                },
+                {
+                  "title": "enhancing-fetch",
+                  "required": false
+                }
+              ]
+            },
+            {
+              "title": "async-await",
+              "length": 4,
+              "agenda": [
+                {
+                  "title": "async-await-intro",
+                  "required": true
+                },
+                {
+                  "title": "error-handling",
+                  "required": false
+                }
+              ]
+            },
+            {
+              "title": "generators",
+              "length": 3,
+              "agenda": [
+                {
+                  "title": "generators-intro",
+                  "required": true
+                },
+                {
+                  "title": "create-an-interval",
+                  "required": false
+                },
+                { "title": "yield", "required": false },
+                {
+                  "title": "async-generators",
+                  "required": false
+                }
+              ]
+            }
+          ]
         },
         {
-          "title": "Exercise: Fetching Remote Data",
+          "title": "Website Exercise",
+          "agenda": [
+            {
+              "title": "text-files",
+              "length": 4,
+              "required": true
+            },
+            {
+              "title": "web-server",
+              "length": 4,
+              "required": true
+            },
+            {
+              "title": "serve-files",
+              "length": 4,
+              "required": true
+            },
+            {
+              "title": "creating-a-route",
+              "length": 4,
+              "required": false
+            },
+            {
+              "title": "fetching-data",
+              "length": 4,
+              "required": false
+            }
+          ]
+        },
+        {
+          "title": "Fetching Remote Data Exercise",
           "length": 15
         }
       ]
