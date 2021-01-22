@@ -4,32 +4,6 @@ import { Link, useLocation } from "react-router-dom";
 import { BookPage, PrevNextBar } from "../ui";
 import { pickPrevious, pickNext } from "../lib";
 
-//
-// TODO: Step through entire hello world section
-//
-//    - [x] Display initial page
-//    - [x] Initial Page Previous
-//    - [x] Initial Page Next
-//
-//    - [x] Display Slides Page
-//    - [x] Slides Page Previous
-//    - [x] Slides Page Next
-//
-//    - [x] Display Environment Setup Pages
-//    - [x] Display Examine HTML Pages
-//    - [ ] Display Periodic Table Primitives Pages
-//
-//    - [ ] Stage Periodic Table Objects files
-//    - [ ] Stage DOM Interaction files
-//
-//    - [ ] Display Periodic Table Objects Screens
-//    - [ ] Display DOM Interaction Screens
-//
-//    - [ ] Display DOT Click Lab
-//    - [ ] DOT Click next and previous
-//    - [ ] Display Data Structures Readme and HOLD
-//
-
 function useBookContent(path = []) {
   let [pTopic, pRoute] = pickPrevious(courseAgenda, ...path);
   let [nTopic, nRoute] = pickNext(courseAgenda, ...path);
@@ -63,14 +37,14 @@ export default function Agenda() {
 
   return (
     <BookPage>
-      <Suspense fallback={<h1>loading</h1>}>
-        <Content />
-      </Suspense>
       <PrevNextBar>
         <Link to={pRoute}>Back: {pTopic.title}</Link>
         <Link to="/">Home</Link>
         <Link to={nRoute}>Next: {nTopic.title}</Link>
       </PrevNextBar>
+      <Suspense fallback={<h1>loading</h1>}>
+        <Content />
+      </Suspense>
     </BookPage>
   );
 }
