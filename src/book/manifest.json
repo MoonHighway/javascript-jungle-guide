@@ -162,8 +162,32 @@
             }
           ]
         },
-        { "title": "DOM Interaction", "length": 10, "agenda": [] },
-        { "title": "Lab: Dot Click", "length": 10, "agenda": [] }
+        {
+          "title": "DOM Interaction",
+          "length": 10,
+          "agenda": [
+            { "title": "create-date", "required": true },
+            { "title": "set-date", "required": true },
+            { "title": "subtract-years", "required": true },
+            { "title": "working-dom-elements", "required": true },
+            { "title": "working-dom-form", "required": true },
+            { "title": "calc-results", "required": false },
+            { "title": "edge-cases", "required": false },
+            { "title": "improve-results", "required": false },
+            { "title": "display-results", "required": false },
+            { "title": "save-results", "required": false }
+          ]
+        },
+        {
+          "title": "Dot Click Lab",
+          "length": 10,
+          "agenda": [
+            { "title": "respond-click", "required": true },
+            { "title": "count-clicks", "required": true },
+            { "title": "display-total", "required": false },
+            { "title": "plural-times", "required": false }
+          ]
+        }
       ]
     },
     {
