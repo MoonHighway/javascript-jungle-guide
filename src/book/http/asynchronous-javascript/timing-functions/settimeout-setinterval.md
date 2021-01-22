@@ -22,7 +22,7 @@ function tick() {
 }
 ```
 
-(a) clearing Intervals
+(3) clearing Intervals
 
 ```javascript
 const theTicking = setInterval(tick, 1000);
@@ -38,7 +38,7 @@ setTimeout(() => {
 }, 5000);
 ```
 
-(b) Finish the Clock
+(4) Finish the Clock
 
 ```javascript
 function tick() {

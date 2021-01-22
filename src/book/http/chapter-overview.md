@@ -5,6 +5,6 @@ It's one thing to have data stored in a local array or object, but the power of 
 | Topic                          | Time    |
 | ------------------------------ | ------- |
 | Overview of HTTP               | 5 mins  |
-| Asynchronous javascript        | 20 mins |
+| Asynchronous JavaScript        | 20 mins |
 | Exercise: Serving a Website    | 20 mins |
 | Exercise: Fetching Remote Data | 15 mins |
