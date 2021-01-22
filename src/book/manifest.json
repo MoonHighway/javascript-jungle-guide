@@ -193,6 +193,7 @@
     {
       "title": "Data Structures",
       "agenda": [
+        { "title": "Chapter Overview" },
         {
           "title": "Install Node",
           "length": 3,
@@ -339,9 +340,18 @@
     {
       "title": "HTTP",
       "agenda": [
-        { "title": "HTTP Overview", "length": 3 },
-        { "title": "Function Samples", "length": 7 },
-        { "title": "Sync vs. Async Samples", "length": 10 },
+        { "title": "Chapter Overview" },
+        { "title": "HTTP Slides", "length": 3 },
+        {
+          "title": "Asynchronous JavaScript",
+          "length": 20,
+          "agenda": [
+            {
+              "title": "functions-as-arguments",
+              "required": true
+            }
+          ]
+        },
         {
           "title": "Exercise: Serving a Website",
           "length": 20
