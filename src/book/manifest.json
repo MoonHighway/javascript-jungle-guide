@@ -297,6 +297,7 @@
     {
       "title": "Full Stack Lab",
       "type": "course-lab",
+      "length": 30,
       "agenda": [
         { "title": "Serve the HTML File", "required": "true" },
         { "title": "Serve the CSS File", "required": "true" },
@@ -305,8 +306,7 @@
         { "title": "Incorporate Readline" },
         { "title": "Change the Mood Readline" },
         { "title": "Quit from Readline" }
-      ],
-      "length": 30
+      ]
     }
   ]
 }
