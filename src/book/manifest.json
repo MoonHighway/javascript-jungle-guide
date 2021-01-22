@@ -3,217 +3,111 @@
   "agenda": [
     {
       "title": "Hello World",
+      "type": "section",
       "agenda": [
-        { "title": "Chapter Overview" },
-        { "title": "Intro Slides", "length": 5 },
+        { "title": "Chapter Overview", "type": "meta" },
+        { "title": "Intro Slides", "length": 5, "type": "slides" },
         {
           "title": "Environment Setup",
+          "type": "exercise",
+          "length": 5,
           "agenda": [
-            { "title": "install-vscode", "length": 3 },
-            {
-              "title": "student-files",
-              "required": true,
-              "length": 2
-            }
+            { "title": "install-vscode", "required": true },
+            { "title": "student-files", "required": true }
           ]
         },
         {
           "title": "Examine HTML and CSS",
+          "length": 5,
+          "type": "sample",
           "agenda": [
-            {
-              "title": "review-html",
-              "required": true,
-              "length": 2
-            },
-            { "title": "review-css", "length": 3 }
+            { "title": "review-html", "required": true },
+            { "title": "review-css" }
           ]
         },
         {
           "title": "Periodic Table Primitives",
+          "type": "sample",
           "agenda": [
             {
               "title": "numbers",
               "length": 3,
               "agenda": [
-                {
-                  "title": "add-script-to-page",
-                  "required": true
-                },
-                {
-                  "title": "numbers",
-                  "required": true
-                },
-                {
-                  "title": "devtools-console",
-                  "required": true
-                },
-                {
-                  "title": "converting-floats-to-numbers"
-                },
-                {
-                  "title": "math-constants"
-                },
-                {
-                  "title": "random-number"
-                }
+                { "title": "add-script-to-page", "required": true },
+                { "title": "numbers", "required": true },
+                { "title": "devtools-console", "required": true },
+                { "title": "converting-floats-to-numbers" },
+                { "title": "math-constants" },
+                { "title": "random-number" }
               ]
             },
             {
               "title": "strings",
               "length": 4,
               "agenda": [
-                {
-                  "title": "creating-variables",
-                  "required": true
-                },
-                {
-                  "title": "concatenation",
-                  "required": true
-                },
-                {
-                  "title": "template-strings",
-                  "required": true
-                },
-                {
-                  "title": "string-length"
-                },
-                {
-                  "title": "whitespace"
-                },
-                {
-                  "title": "string-functions"
-                }
+                { "title": "creating-variables", "required": true },
+                { "title": "concatenation", "required": true },
+                { "title": "template-strings", "required": true },
+                { "title": "string-length" },
+                { "title": "whitespace" },
+                { "title": "string-functions" }
               ]
             },
             {
               "title": "booleans",
               "length": 3,
               "agenda": [
-                {
-                  "title": "if-else",
-                  "required": true
-                },
-                {
-                  "title": "ternary-statements",
-                  "required": true
-                },
-                {
-                  "title": "truthy-falsy",
-                  "required": true
-                },
-                {
-                  "title": "not-a-number",
-                  "required": true
-                },
-                {
-                  "title": "basic-comparison",
-                  "required": true
-                }
+                { "title": "if-else", "required": true },
+                { "title": "ternary-statements", "required": true },
+                { "title": "truthy-falsy", "required": true },
+                { "title": "not-a-number", "required": true },
+                { "title": "basic-comparison", "required": true }
               ]
             }
           ]
         },
         {
           "title": "Periodic Table Objects",
+          "type": "sample",
           "agenda": [
             {
               "title": "Intro to Arrays",
               "length": 2,
               "agenda": [
-                {
-                  "title": "move-script",
-                  "required": true
-                },
-                {
-                  "title": "declaring-arrays",
-                  "required": true
-                },
-                {
-                  "title": "set-array-values",
-                  "required": true
-                },
-                { "title": "push-pop", "required": false },
-                {
-                  "title": "store-anything",
-                  "required": false
-                },
-                {
-                  "title": "multi-dimensional-arrays",
-                  "required": false
-                }
+                { "title": "move-script", "required": true },
+                { "title": "declaring-arrays", "required": true },
+                { "title": "set-array-values", "required": true },
+                { "title": "push-pop" },
+                { "title": "store-anything" },
+                { "title": "multi-dimensional-arrays" }
               ]
             },
             {
               "title": "Intro to Objects",
               "length": 5,
               "agenda": [
-                {
-                  "title": "declaring-objects",
-                  "required": true
-                },
-                {
-                  "title": "dot-notation",
-                  "required": true
-                },
-                {
-                  "title": "literal-notation",
-                  "required": true
-                },
-                {
-                  "title": "array-of-objects",
-                  "required": true
-                },
-                {
-                  "title": "nesting-objects",
-                  "required": false
-                },
-                {
-                  "title": "adding-arrays-to-objects",
-                  "required": false
-                },
-                {
-                  "title": "push-object-into-array",
-                  "required": false
-                }
+                { "title": "declaring-objects", "required": true },
+                { "title": "dot-notation", "required": true },
+                { "title": "literal-notation", "required": true },
+                { "title": "array-of-objects", "required": true },
+                { "title": "nesting-objects" },
+                { "title": "adding-arrays-to-objects" },
+                { "title": "push-object-into-array" }
               ]
             },
             {
               "title": "Intro to Functions",
               "length": 5,
               "agenda": [
-                {
-                  "title": "declaring-functions",
-                  "required": true
-                },
+                { "title": "declaring-functions", "required": true },
                 { "title": "hoisting", "required": true },
-                {
-                  "title": "functions-as-values",
-                  "required": true
-                },
-                {
-                  "title": "function-arguments",
-                  "required": true
-                },
-                {
-                  "title": "default-arguments",
-                  "required": true
-                },
-                {
-                  "title": "arrow-functions",
-                  "required": true
-                },
-                {
-                  "title": "anonymous-functions",
-                  "required": false
-                },
-                {
-                  "title": "setting-window-onload",
-                  "required": false
-                },
-                {
-                  "title": "first-last-challenge",
-                  "required": false
-                }
+                { "title": "functions-as-values", "required": true },
+                { "title": "function-arguments", "required": true },
+                { "title": "default-arguments", "required": true },
+                { "title": "arrow-functions", "required": true },
+                { "title": "anonymous-functions" },
+                { "title": "setting-window-onload" },
+                { "title": "first-last-challenge" }
               ]
             },
             {
@@ -224,326 +118,189 @@
         },
         {
           "title": "DOM Interaction",
+          "type": "sample",
           "length": 10,
           "agenda": [
             { "title": "create-date", "required": true },
             { "title": "set-date", "required": true },
             { "title": "subtract-years", "required": true },
-            {
-              "title": "working-dom-elements",
-              "required": true
-            },
-            {
-              "title": "working-dom-form",
-              "required": true
-            },
-            { "title": "calc-results", "required": false },
-            { "title": "edge-cases", "required": false },
-            {
-              "title": "improve-results",
-              "required": false
-            },
-            {
-              "title": "display-results",
-              "required": false
-            },
-            { "title": "save-results", "required": false }
+            { "title": "working-dom-elements", "required": true },
+            { "title": "working-dom-form", "required": true },
+            { "title": "calc-results" },
+            { "title": "edge-cases" },
+            { "title": "improve-results" },
+            { "title": "display-results" },
+            { "title": "save-results" }
           ]
         },
         {
           "title": "Dot Click Lab",
+          "type": "lab",
           "length": 10,
           "agenda": [
             { "title": "respond-click", "required": true },
             { "title": "count-clicks", "required": true },
-            { "title": "display-total", "required": false },
-            { "title": "plural-times", "required": false }
+            { "title": "display-total" },
+            { "title": "plural-times" }
           ]
         }
       ]
     },
     {
       "title": "Data Structures",
+      "type": "section",
       "agenda": [
-        { "title": "Chapter Overview" },
+        { "title": "Chapter Overview", "type": "meta" },
         {
           "title": "Install Node",
+          "type": "exercise",
           "length": 3,
           "agenda": [
-            {
-              "title": "check-version",
-              "required": true
-            },
-            {
-              "title": "installing-node",
-              "required": true
-            },
-            {
-              "title": "running-a-file",
-              "required": true
-            }
+            { "title": "check-version", "required": true },
+            { "title": "installing-node", "required": true },
+            { "title": "running-a-file", "required": true }
           ]
         },
         {
           "title": "Array Samples",
+          "type": "sample",
           "length": 12,
           "agenda": [
-            {
-              "title": "overview",
-              "required": true
-            },
-            {
-              "title": "the-array-type",
-              "required": true
-            },
-            {
-              "title": "initializing-with-values",
-              "required": true
-            },
-            {
-              "title": "storing-values",
-              "required": false
-            },
-            {
-              "title": "for-loops",
-              "required": false
-            },
-            {
-              "title": "more-loops",
-              "required": false
-            },
-            {
-              "title": "split-join",
-              "required": true
-            },
-            {
-              "title": "push-pop",
-              "required": true
-            },
-            {
-              "title": "shift-unshift",
-              "required": false
-            },
-            {
-              "title": "splicing-arrays",
-              "required": false
-            }
+            { "title": "overview", "required": true },
+            { "title": "the-array-type", "required": true },
+            { "title": "initializing-with-values", "required": true },
+            { "title": "split-join", "required": true },
+            { "title": "push-pop", "required": true },
+            { "title": "shift-unshift" },
+            { "title": "splicing-arrays" },
+            { "title": "storing-values" },
+            { "title": "for-loops" },
+            { "title": "more-loops" }
           ]
         },
         {
           "title": "Working with process argv",
+          "type": "sample",
           "length": 10,
           "agenda": [
-            {
-              "title": "process-argv-intro",
-              "required": true
-            },
-            {
-              "title": "working-with-flags",
-              "required": true
-            },
-            {
-              "title": "node-age-check",
-              "required": false
-            }
+            { "title": "process-argv-intro", "required": true },
+            { "title": "working-with-flags", "required": true },
+            { "title": "node-age-check" }
           ]
         },
         {
           "title": "Object Samples",
           "length": 15,
+          "type": "sample",
           "agenda": [
-            {
-              "title": "object-literal-notation",
-              "required": true
-            },
-            {
-              "title": "print-method",
-              "required": true
-            },
-            {
-              "title": "keys-and-brackets",
-              "required": true
-            },
-            {
-              "title": "using-fields",
-              "required": false
-            },
-            {
-              "title": "converting-to-json",
-              "required": false
-            },
-            {
-              "title": "destructuring",
-              "required": true
-            },
-            {
-              "title": "spread-operator",
-              "required": true
-            },
-            {
-              "title": "using-a-factory",
-              "required": false
-            }
+            { "title": "object-literal-notation", "required": true },
+            { "title": "print-method", "required": true },
+            { "title": "keys-and-brackets", "required": true },
+            { "title": "destructuring", "required": true },
+            { "title": "spread-operator", "required": true },
+            { "title": "using-fields" },
+            { "title": "converting-to-json" },
+            { "title": "using-a-factory" }
           ]
         },
         {
           "title": "Browser Server Comparison",
+          "type": "sample",
           "length": 10,
           "agenda": [
-            {
-              "title": "collecting-input",
-              "required": true
-            },
-            {
-              "title": "universal-isomorphic",
-              "required": false
-            }
+            { "title": "collecting-input", "required": true },
+            { "title": "universal-isomorphic" }
           ]
         },
         {
           "title": "Lab Objects and Arrays",
+          "type": "lab",
           "length": 10,
-          "agenda": [
-            { "title": "lab-overview", "required": true }
-          ]
+          "agenda": [{ "title": "lab-overview", "required": true }]
         }
       ]
     },
     {
       "title": "HTTP",
+      "type": "section",
       "agenda": [
-        { "title": "Chapter Overview" },
-        { "title": "HTTP Slides", "length": 5 },
+        { "title": "Chapter Overview", "type": "meta" },
+        { "title": "HTTP Slides", "type": "slides", "length": 5 },
         {
           "title": "Asynchronous JavaScript",
+          "type": "sample",
           "agenda": [
             {
               "title": "functions",
               "length": 5,
               "agenda": [
-                {
-                  "title": "functions-as-arguments",
-                  "required": true
-                },
-                {
-                  "title": "destructuring-objects",
-                  "required": true
-                },
-                {
-                  "title": "functions-as-methods",
-                  "required": false
-                },
-                {
-                  "title": "passing-info-back",
-                  "required": false
-                }
+                { "title": "functions-as-arguments", "required": true },
+                { "title": "destructuring-objects", "required": true },
+                { "title": "functions-as-methods" },
+                { "title": "passing-info-back" }
               ]
             },
             {
               "title": "timing-functions",
               "length": 4,
               "agenda": [
-                {
-                  "title": "timing-functions",
-                  "required": true
-                },
-                {
-                  "title": "settimeout-setinterval",
-                  "required": false
-                }
+                { "title": "timing-functions", "required": true },
+                { "title": "settimeout-setinterval" }
               ]
             },
             {
               "title": "fetch",
               "length": 4,
               "agenda": [
-                {
-                  "title": "using-fetch",
-                  "required": true
-                },
-                {
-                  "title": "enhancing-fetch",
-                  "required": false
-                }
+                { "title": "using-fetch", "required": true },
+                { "title": "enhancing-fetch" }
               ]
             },
             {
               "title": "async-await",
               "length": 4,
               "agenda": [
-                {
-                  "title": "async-await-intro",
-                  "required": true
-                },
-                {
-                  "title": "error-handling",
-                  "required": false
-                }
+                { "title": "async-await-intro", "required": true },
+                { "title": "error-handling" }
               ]
             },
             {
               "title": "generators",
               "length": 3,
               "agenda": [
-                {
-                  "title": "generators-intro",
-                  "required": true
-                },
-                {
-                  "title": "create-an-interval",
-                  "required": false
-                },
-                { "title": "yield", "required": false },
-                {
-                  "title": "async-generators",
-                  "required": false
-                }
+                { "title": "generators-intro", "required": true },
+                { "title": "create-an-interval" },
+                { "title": "yield" },
+                { "title": "async-generators" }
               ]
             }
           ]
         },
         {
           "title": "Website Exercise",
+          "type": "exercise",
           "agenda": [
-            {
-              "title": "text-files",
-              "length": 4,
-              "required": true
-            },
-            {
-              "title": "web-server",
-              "length": 4,
-              "required": true
-            },
-            {
-              "title": "serve-files",
-              "length": 4,
-              "required": true
-            },
-            {
-              "title": "creating-a-route",
-              "length": 4,
-              "required": false
-            },
-            {
-              "title": "fetching-data",
-              "length": 4,
-              "required": false
-            }
+            { "title": "text-files", "length": 4, "required": true },
+            { "title": "web-server", "length": 4, "required": true },
+            { "title": "serve-files", "length": 4, "required": true },
+            { "title": "creating-a-route", "length": 4 },
+            { "title": "fetching-data", "length": 4 }
           ]
         },
         {
           "title": "Fetching Remote Data Exercise",
+          "type": "exercise",
           "length": 15
         }
       ]
     },
     {
       "title": "Full Stack Lab",
+      "type": "course-lab",
       "agenda": [
-        { "title": "Serve the HTML File" },
-        { "title": "Serve the CSS File" },
-        { "title": "Serve the Image" },
+        { "title": "Serve the HTML File", "required": "true" },
+        { "title": "Serve the CSS File", "required": "true" },
+        { "title": "Serve the Image", "required": "true" },
         { "title": "Create a Variable for the Mood" },
         { "title": "Incorporate Readline" },
         { "title": "Change the Mood Readline" },
