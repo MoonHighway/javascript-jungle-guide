@@ -1,7 +1,7 @@
 import { createGlobalStyle } from "styled-components";
-import openSans from "./fonts/OpenSans-Regular.ttf";
-import spartan from "./fonts/Spartan-Regular.ttf";
-import spartanBlack from "./fonts/Spartan-Black.ttf";
+import ynk from "./fonts/YanoneKaffeesatz-Regular.ttf";
+import exo from "./fonts/Exo-Regular.ttf";
+import pts from "./fonts/PontanoSans-Regular.ttf";
 import grace from "./fonts/CoveredByYourGrace-Regular.ttf";
 
 export const GlobalStyle = createGlobalStyle`
@@ -21,36 +21,40 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   @font-face {
-    font-family: 'OpenSans';
-    src: local('OpenSans'), url(${openSans}) format('truetype');
+    font-family: "Yanone Kaffeesatz";
+    src: local('CoveredByYourGrace'), url(${ynk}) format('truetype');
   }
-  
   @font-face {
-      font-family: 'Spartan';
-      font-weight: 900;
-      src: local('Spartan'), url(${spartan}) format('truetype');
+    font-family: "Exo";
+    src: local('CoveredByYourGrace'), url(${exo}) format('truetype');
   }
-  
   @font-face {
-      font-family: 'SpartanBlack';
-      font-weight: 900;
-      src: local('SpartanBlack'), url(${spartanBlack}) format('truetype');
+    font-family: "Pontano Sans";
+    src: local('CoveredByYourGrace'), url(${pts}) format('truetype');
   }
   @font-face {
     font-family: 'CoveredByYourGrace';
     font-weight: 900;
     src: local('CoveredByYourGrace'), url(${grace}) format('truetype');
-}
+  }
 `;
 
 export const fonts = {
-  title: "SpartanBlack",
-  subtitle: "Spartan",
-  text: "OpenSans",
+  title: "Yanone Kaffeesatz",
+  subtitle: "Exo",
+  text: "Pontano Sans",
   handwriting: "CoveredByYourGrace",
 };
 
 export const colors = {
-  primary: "#10418A",
-  secondary: "#007ABC",
+  primary: "#2B558C",
+  primaryLight: "#3370A6",
+  secondary: "#8BBBD9",
+  contrast: "#BF8641",
+  contrastLight: "#F2C777",
+  dark: "#323A40",
+  light: "#B5D2E8",
+  bland: "#97AFC2",
+  darkbland: "#798D9C",
+  highlight: "#4DFFA7",
 };

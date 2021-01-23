@@ -6,12 +6,25 @@ import { ImLab } from "react-icons/im";
 import { FaCode, FaUserGraduate } from "react-icons/fa";
 
 export const PrevNextBar = styled.div`
-  margin: 80px;
-  align-self: center;
-  width: 500px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
+`;
+
+export const Column = styled.div`
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+`;
+
+export const Row = styled.div`
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 `;
 
 export const Centered = styled.div`
@@ -29,8 +42,11 @@ export const BookPage = styled.section`
   padding: 1em;
 `;
 
-export const Timer = ({ color = "#898989", size = 25, ...props }) => (
-  <MdTimer size={size} color={color} {...props} />
+export const Timer = ({ color = "#898989", size = 25, t = 0, ...props }) => (
+  <Row>
+    <MdTimer size={size} color={color} {...props} />
+    <span>{t} mins</span>
+  </Row>
 );
 
 export const Slides = ({ color = "#898989", size = 25, ...props }) => (
