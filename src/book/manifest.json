@@ -6,7 +6,11 @@
       "type": "section",
       "agenda": [
         { "title": "Chapter Overview", "type": "meta" },
-        { "title": "Intro Slides", "length": 5, "type": "slides" },
+        {
+          "title": "Intro Slides",
+          "length": 5,
+          "type": "slides"
+        },
         {
           "title": "Environment Setup",
           "type": "exercise",
@@ -33,9 +37,15 @@
               "title": "numbers",
               "length": 3,
               "agenda": [
-                { "title": "add-script-to-page", "required": true },
+                {
+                  "title": "add-script-to-page",
+                  "required": true
+                },
                 { "title": "numbers", "required": true },
-                { "title": "devtools-console", "required": true },
+                {
+                  "title": "devtools-console",
+                  "required": true
+                },
                 { "title": "converting-floats-to-numbers" },
                 { "title": "math-constants" },
                 { "title": "random-number" }
@@ -45,9 +55,18 @@
               "title": "strings",
               "length": 4,
               "agenda": [
-                { "title": "creating-variables", "required": true },
-                { "title": "concatenation", "required": true },
-                { "title": "template-strings", "required": true },
+                {
+                  "title": "creating-variables",
+                  "required": true
+                },
+                {
+                  "title": "concatenation",
+                  "required": true
+                },
+                {
+                  "title": "template-strings",
+                  "required": true
+                },
                 { "title": "string-length" },
                 { "title": "whitespace" },
                 { "title": "string-functions" }
@@ -58,10 +77,22 @@
               "length": 3,
               "agenda": [
                 { "title": "if-else", "required": true },
-                { "title": "ternary-statements", "required": true },
-                { "title": "truthy-falsy", "required": true },
-                { "title": "not-a-number", "required": true },
-                { "title": "basic-comparison", "required": true }
+                {
+                  "title": "ternary-statements",
+                  "required": true
+                },
+                {
+                  "title": "truthy-falsy",
+                  "required": true
+                },
+                {
+                  "title": "not-a-number",
+                  "required": true
+                },
+                {
+                  "title": "basic-comparison",
+                  "required": true
+                }
               ]
             }
           ]
@@ -74,9 +105,18 @@
               "title": "Intro to Arrays",
               "length": 2,
               "agenda": [
-                { "title": "move-script", "required": true },
-                { "title": "declaring-arrays", "required": true },
-                { "title": "set-array-values", "required": true },
+                {
+                  "title": "move-script",
+                  "required": true
+                },
+                {
+                  "title": "declaring-arrays",
+                  "required": true
+                },
+                {
+                  "title": "set-array-values",
+                  "required": true
+                },
                 { "title": "push-pop" },
                 { "title": "store-anything" },
                 { "title": "multi-dimensional-arrays" }
@@ -86,10 +126,22 @@
               "title": "Intro to Objects",
               "length": 5,
               "agenda": [
-                { "title": "declaring-objects", "required": true },
-                { "title": "dot-notation", "required": true },
-                { "title": "literal-notation", "required": true },
-                { "title": "array-of-objects", "required": true },
+                {
+                  "title": "declaring-objects",
+                  "required": true
+                },
+                {
+                  "title": "dot-notation",
+                  "required": true
+                },
+                {
+                  "title": "literal-notation",
+                  "required": true
+                },
+                {
+                  "title": "array-of-objects",
+                  "required": true
+                },
                 { "title": "nesting-objects" },
                 { "title": "adding-arrays-to-objects" },
                 { "title": "push-object-into-array" }
@@ -99,12 +151,27 @@
               "title": "Intro to Functions",
               "length": 5,
               "agenda": [
-                { "title": "declaring-functions", "required": true },
+                {
+                  "title": "declaring-functions",
+                  "required": true
+                },
                 { "title": "hoisting", "required": true },
-                { "title": "functions-as-values", "required": true },
-                { "title": "function-arguments", "required": true },
-                { "title": "default-arguments", "required": true },
-                { "title": "arrow-functions", "required": true },
+                {
+                  "title": "functions-as-values",
+                  "required": true
+                },
+                {
+                  "title": "function-arguments",
+                  "required": true
+                },
+                {
+                  "title": "default-arguments",
+                  "required": true
+                },
+                {
+                  "title": "arrow-functions",
+                  "required": true
+                },
                 { "title": "anonymous-functions" },
                 { "title": "setting-window-onload" },
                 { "title": "first-last-challenge" }
@@ -124,8 +191,14 @@
             { "title": "create-date", "required": true },
             { "title": "set-date", "required": true },
             { "title": "subtract-years", "required": true },
-            { "title": "working-dom-elements", "required": true },
-            { "title": "working-dom-form", "required": true },
+            {
+              "title": "working-dom-elements",
+              "required": true
+            },
+            {
+              "title": "working-dom-form",
+              "required": true
+            },
             { "title": "calc-results" },
             { "title": "edge-cases" },
             { "title": "improve-results" },
@@ -134,7 +207,7 @@
           ]
         },
         {
-          "title": "Dot Click Lab",
+          "title": "Dot Click",
           "type": "lab",
           "length": 10,
           "agenda": [
@@ -157,18 +230,24 @@
           "length": 3,
           "agenda": [
             { "title": "check-version", "required": true },
-            { "title": "installing-node", "required": true },
+            {
+              "title": "installing-node",
+              "required": true
+            },
             { "title": "running-a-file", "required": true }
           ]
         },
         {
-          "title": "Array Samples",
+          "title": "Working with Arrays",
           "type": "sample",
           "length": 12,
           "agenda": [
             { "title": "overview", "required": true },
             { "title": "the-array-type", "required": true },
-            { "title": "initializing-with-values", "required": true },
+            {
+              "title": "initializing-with-values",
+              "required": true
+            },
             { "title": "split-join", "required": true },
             { "title": "push-pop", "required": true },
             { "title": "shift-unshift" },
@@ -183,21 +262,36 @@
           "type": "sample",
           "length": 10,
           "agenda": [
-            { "title": "process-argv-intro", "required": true },
-            { "title": "working-with-flags", "required": true },
+            {
+              "title": "process-argv-intro",
+              "required": true
+            },
+            {
+              "title": "working-with-flags",
+              "required": true
+            },
             { "title": "node-age-check" }
           ]
         },
         {
-          "title": "Object Samples",
+          "title": "Working with Objects",
           "length": 15,
           "type": "sample",
           "agenda": [
-            { "title": "object-literal-notation", "required": true },
+            {
+              "title": "object-literal-notation",
+              "required": true
+            },
             { "title": "print-method", "required": true },
-            { "title": "keys-and-brackets", "required": true },
+            {
+              "title": "keys-and-brackets",
+              "required": true
+            },
             { "title": "destructuring", "required": true },
-            { "title": "spread-operator", "required": true },
+            {
+              "title": "spread-operator",
+              "required": true
+            },
             { "title": "using-fields" },
             { "title": "converting-to-json" },
             { "title": "using-a-factory" }
@@ -208,15 +302,20 @@
           "type": "sample",
           "length": 10,
           "agenda": [
-            { "title": "collecting-input", "required": true },
+            {
+              "title": "collecting-input",
+              "required": true
+            },
             { "title": "universal-isomorphic" }
           ]
         },
         {
-          "title": "Lab Objects and Arrays",
+          "title": "Objects and Arrays",
           "type": "lab",
           "length": 10,
-          "agenda": [{ "title": "lab-overview", "required": true }]
+          "agenda": [
+            { "title": "lab-overview", "required": true }
+          ]
         }
       ]
     },
@@ -225,7 +324,11 @@
       "type": "section",
       "agenda": [
         { "title": "Chapter Overview", "type": "meta" },
-        { "title": "HTTP Slides", "type": "slides", "length": 5 },
+        {
+          "title": "HTTP Slides",
+          "type": "slides",
+          "length": 5
+        },
         {
           "title": "Asynchronous JavaScript",
           "type": "sample",
@@ -234,8 +337,14 @@
               "title": "functions",
               "length": 5,
               "agenda": [
-                { "title": "functions-as-arguments", "required": true },
-                { "title": "destructuring-objects", "required": true },
+                {
+                  "title": "functions-as-arguments",
+                  "required": true
+                },
+                {
+                  "title": "destructuring-objects",
+                  "required": true
+                },
                 { "title": "functions-as-methods" },
                 { "title": "passing-info-back" }
               ]
@@ -244,7 +353,10 @@
               "title": "timing-functions",
               "length": 4,
               "agenda": [
-                { "title": "timing-functions", "required": true },
+                {
+                  "title": "timing-functions",
+                  "required": true
+                },
                 { "title": "settimeout-setinterval" }
               ]
             },
@@ -252,7 +364,10 @@
               "title": "fetch",
               "length": 4,
               "agenda": [
-                { "title": "using-fetch", "required": true },
+                {
+                  "title": "using-fetch",
+                  "required": true
+                },
                 { "title": "enhancing-fetch" }
               ]
             },
@@ -260,7 +375,10 @@
               "title": "async-await",
               "length": 4,
               "agenda": [
-                { "title": "async-await-intro", "required": true },
+                {
+                  "title": "async-await-intro",
+                  "required": true
+                },
                 { "title": "error-handling" }
               ]
             },
@@ -268,7 +386,10 @@
               "title": "generators",
               "length": 3,
               "agenda": [
-                { "title": "generators-intro", "required": true },
+                {
+                  "title": "generators-intro",
+                  "required": true
+                },
                 { "title": "create-an-interval" },
                 { "title": "yield" },
                 { "title": "async-generators" }
@@ -277,34 +398,64 @@
           ]
         },
         {
-          "title": "Website Exercise",
+          "title": "Serving a Website",
           "type": "exercise",
           "agenda": [
-            { "title": "text-files", "length": 4, "required": true },
-            { "title": "web-server", "length": 4, "required": true },
-            { "title": "serve-files", "length": 4, "required": true },
+            {
+              "title": "text-files",
+              "length": 4,
+              "required": true
+            },
+            {
+              "title": "web-server",
+              "length": 4,
+              "required": true
+            },
+            {
+              "title": "serve-files",
+              "length": 4,
+              "required": true
+            },
             { "title": "creating-a-route", "length": 4 },
             { "title": "fetching-data", "length": 4 }
           ]
         },
         {
-          "title": "Fetching Remote Data Exercise",
+          "title": "Fetching Remote Data",
           "type": "exercise",
           "length": 15
         }
       ]
     },
     {
-      "title": "Full Stack Lab",
+      "title": "Mood Server",
       "type": "course-lab",
       "length": 30,
       "agenda": [
-        { "title": "Serve the HTML File", "required": "true", "type": "lab" },
-        { "title": "Serve the CSS File", "required": "true", "type": "lab" },
-        { "title": "Serve the Image", "required": "true", "type": "lab" },
-        { "title": "Create a Variable for the Mood", "type": "lab" },
+        {
+          "title": "Serve the HTML File",
+          "required": "true",
+          "type": "lab"
+        },
+        {
+          "title": "Serve the CSS File",
+          "required": "true",
+          "type": "lab"
+        },
+        {
+          "title": "Serve the Image",
+          "required": "true",
+          "type": "lab"
+        },
+        {
+          "title": "Create a Variable for the Mood",
+          "type": "lab"
+        },
         { "title": "Incorporate Readline", "type": "lab" },
-        { "title": "Change the Mood Readline", "type": "lab" },
+        {
+          "title": "Change the Mood Readline",
+          "type": "lab"
+        },
         { "title": "Quit from Readline", "type": "lab" }
       ]
     }
