@@ -299,13 +299,13 @@
       "type": "course-lab",
       "length": 30,
       "agenda": [
-        { "title": "Serve the HTML File", "required": "true" },
-        { "title": "Serve the CSS File", "required": "true" },
-        { "title": "Serve the Image", "required": "true" },
-        { "title": "Create a Variable for the Mood" },
-        { "title": "Incorporate Readline" },
-        { "title": "Change the Mood Readline" },
-        { "title": "Quit from Readline" }
+        { "title": "Serve the HTML File", "required": "true", "type": "lab" },
+        { "title": "Serve the CSS File", "required": "true", "type": "lab" },
+        { "title": "Serve the Image", "required": "true", "type": "lab" },
+        { "title": "Create a Variable for the Mood", "type": "lab" },
+        { "title": "Incorporate Readline", "type": "lab" },
+        { "title": "Change the Mood Readline", "type": "lab" },
+        { "title": "Quit from Readline", "type": "lab" }
       ]
     }
   ]

@@ -1,13 +1,13 @@
 // This function takes a string like "Hello World JavaScript"
 // and turns it into "hello-world-javascript"
-const urlFriendly = (str) => str.trim().toLowerCase().replace(/ /g, "-");
+export const urlFriendly = (str) => str.trim().toLowerCase().replace(/ /g, "-");
 
 // This is a predicate used to find agenda items by the title field.
 // It takes in the value for the title field "location" and returns
 // a function that can be used to check title fields against that value
 // It also converts everything to lowercases and replaces spaces before compairing the title
 // so that routes will match titles and titles will match titles
-const searchByTitle = (location) => ({ title }) =>
+export const searchByTitle = (location) => ({ title }) =>
   urlFriendly(title) === urlFriendly(location);
 
 // These are the argument check errors for sanity checking

@@ -53,12 +53,12 @@ const Title = styled.div`
     color: ${colors.secondary};
     font-family: ${fonts.handwriting};
     text-align: center;
-    align-self: center;
+    align-self: flex-start;
   }
 
   span {
     display: block;
-    font-size: 1.5em;
+    font-size: 2.5em;
     font-family: ${fonts.title};
   }
 
