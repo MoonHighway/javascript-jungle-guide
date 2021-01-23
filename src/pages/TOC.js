@@ -58,6 +58,14 @@ export default function TOC() {
   return (
     <Layout>
       <Title>Welcome to the JavaScript Jungle</Title>
+      <Menu>
+        <Link to="/overview">Course Overview</Link>
+        <Link to="/how-to-use">How to Use This Guide</Link>
+        <Link to="/">
+          <span>Cover Page</span>
+          <span>previous</span>
+        </Link>
+      </Menu>
       {agenda.map((section, i) => (
         <Block key={urlFriendly(section.title)} id={i + 1} section={section} />
       ))}
@@ -99,6 +107,12 @@ const Title = styled.h1`
   min-width: 355px;
 `;
 
+const Menu = styled.div`
+  grid-area: 12 / 1 / 2 / 1;
+  display: flex;
+  flex-direction: column;
+`;
+
 const Section = styled.div`
   border: solid 4px ${colors.primary};
   border-radius: 0 20%;
@@ -111,16 +125,16 @@ const Section = styled.div`
   grid-column-gap: 0px;
   grid-row-gap: 0px;
 
-  &:nth-child(2) {
+  &:nth-child(3) {
     grid-area: 2 / 2 / 7 / 4;
   }
-  &:nth-child(3) {
+  &:nth-child(4) {
     grid-area: 2 / 4 / 7 / 6;
   }
-  &:nth-child(4) {
+  &:nth-child(5) {
     grid-area: 7 / 2 / 12 / 4;
   }
-  &:nth-child(5) {
+  &:nth-child(6) {
     grid-area: 7 / 4 / 12 / 6;
     background-color: ${colors.secondary};
     color: ${colors.dark};
