@@ -4,6 +4,7 @@ import { RiSlideshowFill } from "react-icons/ri";
 import { GrWorkshop } from "react-icons/gr";
 import { ImLab } from "react-icons/im";
 import { FaCode, FaUserGraduate } from "react-icons/fa";
+import { colors } from "./theme";
 
 export const PrevNextBar = styled.div`
   display: flex;
@@ -12,15 +13,11 @@ export const PrevNextBar = styled.div`
 `;
 
 export const Column = styled.div`
-  width: 100%;
-  height: 100%;
   display: flex;
   flex-direction: column;
 `;
 
 export const Row = styled.div`
-  width: 100%;
-  height: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -42,14 +39,24 @@ export const BookPage = styled.section`
   padding: 1em;
 `;
 
-export const Timer = ({ color = "#898989", size = 25, t = 0, ...props }) => (
-  <Row>
-    <MdTimer size={size} color={color} {...props} />
-    <span>{t} mins</span>
-  </Row>
+export const TopicIcon = ({ type, ...props }) =>
+  type === "sample" ? (
+    <Sample {...props} />
+  ) : type === "lab" ? (
+    <Lab {...props} />
+  ) : type === "course-lab" ? (
+    <CourseLab {...props} />
+  ) : type === "exercise" ? (
+    <Exercise />
+  ) : (
+    <Slides />
+  );
+
+export const Timer = ({ color = "#898989", size = 25, ...props }) => (
+  <MdTimer size={size} color={color} {...props} />
 );
 
-export const Slides = ({ color = "#898989", size = 25, ...props }) => (
+export const Slides = ({ color = colors.primary, size = 25, ...props }) => (
   <RiSlideshowFill size={size} color={color} {...props} />
 );
 
