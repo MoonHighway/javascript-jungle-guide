@@ -52,6 +52,13 @@ export const TopicIcon = ({ type, ...props }) =>
     <Slides />
   );
 
+export const CircleLink = ({ Icon, children }) => (
+  <Row>
+    <Icon />
+    <span>{children}</span>
+  </Row>
+);
+
 export const Timer = ({ color = "#898989", size = 25, ...props }) => (
   <MdTimer size={size} color={color} {...props} />
 );

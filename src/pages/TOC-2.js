@@ -64,15 +64,15 @@ export default function TOC() {
       <Menu>
         <Link to="/overview">
           <GrOverview size={25} color="black" />
-          Course Overview
+          Overview
         </Link>
         <Link to="/how-to-use">
           <GiTeacher size={25} color="black" />
-          How to Use this Guide
+          How to Use
         </Link>
         <Link to="/">
           <IoIosArrowBack size={25} color="black" />
-          Bact to Cover
+          Cover
         </Link>
       </Menu>
       {agenda.map((section, i) => (
@@ -83,10 +83,7 @@ export default function TOC() {
 }
 
 const Layout = styled.section`
-  width: calc(100% - 50px);
-  @media (orientation: portrait) {
-    width: calc(100% - 25px);
-  }
+  width: calc(100% - 25px);
   height: calc(100% - 50px);
   display: grid;
   @media screen and (max-width: 800px) {
@@ -102,20 +99,12 @@ const Layout = styled.section`
     }
   }
 
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(11, 1fr);
-
-  @media (orientation: portrait) {
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(12, 1fr);
-  }
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(12, 1fr);
 
   grid-column-gap: 25px;
   grid-row-gap: 25px;
-  margin: 25px 25px 25px 25px;
-  @media (orientation: portrait) {
-    margin: 25px 0 25px 25px;
-  }
+  margin: 25px 0 25px 25px;
 `;
 
 const Title = styled.h1`
@@ -128,15 +117,11 @@ const Title = styled.h1`
 `;
 
 const Menu = styled.div`
-  grid-area: 12 / 1 / 2 / 1;
+  grid-area: 3 / 5 / 2 / 1;
   display: flex;
-  flex-direction: column;
-  @media (orientation: portrait) {
-    grid-area: 3 / 5 / 2 / 1;
-    flex-direction: row-reverse;
-    justify-content: center;
-    align-items: center;
-  }
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 
   svg {
     border-radius: 50%;
@@ -154,9 +139,7 @@ const Menu = styled.div`
     font-size: 1.25em;
     font-family: ${fonts.subtitle};
     margin-bottom: 20px;
-    @media (orientation: portrait) {
-      margin-right: 20px;
-    }
+    margin-right: 20px;
   }
 `;
 
@@ -173,28 +156,16 @@ const Section = styled.div`
   grid-row-gap: 0px;
 
   &:nth-child(3) {
-    grid-area: 2 / 2 / 7 / 4;
-    @media (orientation: portrait) {
-      grid-area: 3 / 1 / 8 / 3;
-    }
+    grid-area: 3 / 1 / 8 / 3;
   }
   &:nth-child(4) {
-    grid-area: 2 / 4 / 7 / 6;
-    @media (orientation: portrait) {
-      grid-area: 3 / 3 / 8 / 5;
-    }
+    grid-area: 3 / 3 / 8 / 5;
   }
   &:nth-child(5) {
-    grid-area: 7 / 2 / 12 / 4;
-    @media (orientation: portrait) {
-      grid-area: 8 / 1 / 13 / 3;
-    }
+    grid-area: 8 / 1 / 13 / 3;
   }
   &:nth-child(6) {
-    grid-area: 7 / 4 / 12 / 6;
-    @media (orientation: portrait) {
-      grid-area: 8 / 3 / 13 / 5;
-    }
+    grid-area: 8 / 3 / 13 / 5;
     background-color: ${colors.secondary};
     color: ${colors.dark};
     h2 {
