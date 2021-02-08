@@ -1,8 +1,9 @@
 import { lazy, Suspense } from "react";
 import courseAgenda from "../book/manifest.json";
 import { Link, useLocation } from "react-router-dom";
-import { BookPage, PrevNextBar } from "../ui";
+import { PrevNextBar } from "../ui";
 import { pickPrevious, pickNext } from "../lib";
+import { BookStyles } from "../book-ui";
 
 function useBookContent(path = []) {
   let [pTopic, pRoute] = pickPrevious(courseAgenda, ...path);
@@ -36,7 +37,7 @@ export default function Agenda() {
   );
 
   return (
-    <BookPage>
+    <BookStyles>
       <PrevNextBar>
         <Link to={pRoute}>Back: {pTopic.title}</Link>
         <Link to="/">Home</Link>
@@ -45,6 +46,11 @@ export default function Agenda() {
       <Suspense fallback={<h1>loading</h1>}>
         <Content />
       </Suspense>
-    </BookPage>
+      <PrevNextBar>
+        <Link to={pRoute}>Back: {pTopic.title}</Link>
+        <Link to="/">Home</Link>
+        <Link to={nRoute}>Next: {nTopic.title}</Link>
+      </PrevNextBar>
+    </BookStyles>
   );
 }

@@ -1,7 +1,8 @@
 import { lazy, Suspense } from "react";
 import { Link } from "react-router-dom";
-import { Centered, PrevNextBar } from "../ui";
+import { PrevNextBar } from "../ui";
 import bookAgenda from "../book/manifest.json";
+import { BookStyles } from "../book-ui";
 import { pickFirst } from "../lib";
 
 const Content = lazy(() =>
@@ -14,14 +15,18 @@ export default function Overview() {
   route = route.replace("javascript-jungle-teacher's-edition", "agenda");
 
   return (
-    <Centered>
+    <BookStyles>
+      <PrevNextBar>
+        <Link to="/book-components">Prev: How to Use this Guide</Link>
+        <Link to={route}>Next: Begin "{topic.title}"</Link>
+      </PrevNextBar>
       <Suspense fallback={<h1>loading</h1>}>
         <Content />
       </Suspense>
       <PrevNextBar>
-        <Link to="/book-components">Prev: Book Components</Link>
-        <Link to={route}>Start {topic.title}</Link>
+        <Link to="/book-components">Prev: How to Use this Guide</Link>
+        <Link to={route}>Next: Begin "{topic.title}"</Link>
       </PrevNextBar>
-    </Centered>
+    </BookStyles>
   );
 }

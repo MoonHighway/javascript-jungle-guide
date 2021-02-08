@@ -32,13 +32,6 @@ export const Centered = styled.div`
   align-items: center;
 `;
 
-export const BookPage = styled.section`
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  padding: 1em;
-`;
-
 export const TopicIcon = ({ type, ...props }) =>
   type === "sample" ? (
     <Sample {...props} />
