@@ -8,7 +8,7 @@ import { BookStyles } from "../book-ui";
 function useBookContent(path = []) {
   let [pTopic, pRoute] = pickPrevious(courseAgenda, ...path);
   let [nTopic, nRoute] = pickNext(courseAgenda, ...path);
-  console.log(path);
+
   if (!pTopic) {
     pTopic = { title: "Course Overview" };
     pRoute = "/overview";
