@@ -1,6 +1,5 @@
 import { lazy, Suspense } from "react";
-import { Link } from "react-router-dom";
-import { PrevNextBar } from "../ui";
+import { NavigationBar } from "../ui";
 import { BookStyles } from "../book-ui";
 
 const Content = lazy(() =>
@@ -10,17 +9,13 @@ const Content = lazy(() =>
 export default function HowToUse() {
   return (
     <BookStyles>
-      <PrevNextBar>
-        <Link to="/toc">Prev:Table of Contents</Link>
-        <Link to="/overview">Next:Overview</Link>
-      </PrevNextBar>
       <Suspense fallback={<h1>loading</h1>}>
         <Content />
       </Suspense>
-      <PrevNextBar>
-        <Link to="/toc">Prev:Table of Contents</Link>
-        <Link to="/overview">Next:Course Overview</Link>
-      </PrevNextBar>
+      <NavigationBar
+        prev={{ to: "/toc", text: "Table of Contents" }}
+        next={{ to: "/overview", text: "Overview" }}
+      />
     </BookStyles>
   );
 }
