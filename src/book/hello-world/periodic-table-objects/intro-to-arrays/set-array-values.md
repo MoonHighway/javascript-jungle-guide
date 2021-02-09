@@ -1,6 +1,6 @@
 # Setting Array Values
 
-(1) Set values within an array. 🦐
+(1) Set values within an array.
 
 ```javascript
 const instruments = new Array();
@@ -12,7 +12,7 @@ console.log(instruments.length);
 console.log(instruments[1]);
 ```
 
-(2) Set the values when you declare the array 🦐
+(2) Set the values when you declare the array.
 
 ```javascript
 const instruments = ["drums", "bass"];

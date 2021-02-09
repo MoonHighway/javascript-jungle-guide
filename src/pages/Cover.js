@@ -10,7 +10,10 @@ export default function Cover() {
   return (
     <Content>
       <BottomCorner>
-        <a href="http://www.moonhighway.com" target="_blank">
+        <a
+          href="http://www.moonhighway.com"
+          target="_blank"
+        >
           <img src={MHLogo} />
         </a>
       </BottomCorner>
@@ -27,7 +30,7 @@ export default function Cover() {
         <h1>
           Welcome to the <span>JavaScript Jungle</span>
         </h1>
-        <h2>Teachers Edition</h2>
+        <h2>Teacher's Edition</h2>
       </Title>
       <Start>
         <Link to="/toc">Start</Link>

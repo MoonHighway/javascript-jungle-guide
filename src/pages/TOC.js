@@ -24,7 +24,11 @@ const TopicList = ({ section, agenda = [] }) => (
         topic.type !== "meta" && (
           <Item key={urlFriendly(topic.title)}>
             <TopicIcon size={20} type={topic.type} />
-            <Link to={`/agenda/${urlFriendly(section.title)}/${route}`}>
+            <Link
+              to={`/agenda/${urlFriendly(
+                section.title
+              )}/${route}`}
+            >
               {topic.title}
             </Link>
             {time ? <span>{time} mins</span> : null}
@@ -45,14 +49,23 @@ function Block({ id, section }) {
   return (
     <Section>
       <ID onClick={startSection}>
-        {id < 4 ? <span>{id}</span> : <CourseLab color="white" size={30} />}
+        {id < 4 ? (
+          <span>{id}</span>
+        ) : (
+          <CourseLab color="white" size={30} />
+        )}
       </ID>
-      <SubTitle onClick={startSection}>{section.title}</SubTitle>
+      <SubTitle onClick={startSection}>
+        {section.title}
+      </SubTitle>
       <Time>
         <Timer color={colors.primary} size={30} />
         <span>{time} mins</span>
       </Time>
-      <TopicList section={section} agenda={section.agenda} />
+      <TopicList
+        section={section}
+        agenda={section.agenda}
+      />
     </Section>
   );
 }
@@ -72,11 +85,15 @@ export default function TOC() {
         </Link>
         <Link to="/">
           <IoIosArrowBack size={25} color="black" />
-          Bact to Cover
+          Back to Cover
         </Link>
       </Menu>
       {agenda.map((section, i) => (
-        <Block key={urlFriendly(section.title)} id={i + 1} section={section} />
+        <Block
+          key={urlFriendly(section.title)}
+          id={i + 1}
+          section={section}
+        />
       ))}
     </Layout>
   );
