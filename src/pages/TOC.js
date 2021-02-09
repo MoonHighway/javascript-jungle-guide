@@ -4,16 +4,29 @@ import { agenda } from "../book/manifest.json";
 import { totalTime, urlFriendly, pickFirst } from "../lib";
 import { fonts, colors } from "../theme";
 import styled from "styled-components";
+import { GrOverview } from "react-icons/gr";
+import { GiTeacher } from "react-icons/gi";
+import { IoIosArrowBack } from "react-icons/io";
 
-const TopicList = ({ agenda = [] }) => (
+const TopicList = ({ section, agenda = [] }) => (
   <List>
     {agenda.map((topic, i) => {
       const time = totalTime(topic);
+      let route;
+
+      if (topic.agenda) {
+        [, route] = pickFirst(topic);
+      } else {
+        route = urlFriendly(topic.title);
+      }
+
       return (
         topic.type !== "meta" && (
           <Item key={urlFriendly(topic.title)}>
             <TopicIcon size={20} type={topic.type} />
-            <span>{topic.title}</span>
+            <Link to={`/agenda/${urlFriendly(section.title)}/${route}`}>
+              {topic.title}
+            </Link>
             {time ? <span>{time} mins</span> : null}
           </Item>
         )
@@ -24,22 +37,22 @@ const TopicList = ({ agenda = [] }) => (
 
 function Block({ id, section }) {
   const time = totalTime(section);
+  const startSection = () => {
+    const [, route] = pickFirst(section);
+    window.location = `/agenda/${route}`;
+  };
+
   return (
-    <Section
-      onClick={() => {
-        const [, route] = pickFirst(section);
-        window.location = `/agenda/${route}`;
-      }}
-    >
-      <ID>
+    <Section>
+      <ID onClick={startSection}>
         {id < 4 ? <span>{id}</span> : <CourseLab color="white" size={30} />}
       </ID>
-      <SubTitle>{section.title}</SubTitle>
+      <SubTitle onClick={startSection}>{section.title}</SubTitle>
       <Time>
         <Timer color={colors.primary} size={30} />
         <span>{time} mins</span>
       </Time>
-      <TopicList agenda={section.agenda} />
+      <TopicList section={section} agenda={section.agenda} />
     </Section>
   );
 }
@@ -48,6 +61,20 @@ export default function TOC() {
   return (
     <Layout>
       <Title>Welcome to the JavaScript Jungle</Title>
+      <Menu>
+        <Link to="/overview">
+          <GrOverview size={25} color="black" />
+          Course Overview
+        </Link>
+        <Link to="/how-to-use">
+          <GiTeacher size={25} color="black" />
+          How to Use this Guide
+        </Link>
+        <Link to="/">
+          <IoIosArrowBack size={25} color="black" />
+          Bact to Cover
+        </Link>
+      </Menu>
       {agenda.map((section, i) => (
         <Block key={urlFriendly(section.title)} id={i + 1} section={section} />
       ))}
@@ -57,6 +84,9 @@ export default function TOC() {
 
 const Layout = styled.section`
   width: calc(100% - 50px);
+  @media (orientation: portrait) {
+    width: calc(100% - 25px);
+  }
   height: calc(100% - 50px);
   display: grid;
   @media screen and (max-width: 800px) {
@@ -72,21 +102,62 @@ const Layout = styled.section`
     }
   }
 
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(11, 1fr);
+
+  @media (orientation: portrait) {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+  }
 
   grid-column-gap: 25px;
   grid-row-gap: 25px;
-  margin: 25px;
+  margin: 25px 25px 25px 25px;
+  @media (orientation: portrait) {
+    margin: 25px 0 25px 25px;
+  }
 `;
 
 const Title = styled.h1`
-  grid-area: 1 / 1 / 2 / 5;
+  grid-area: 1 / 1 / 2 / 6;
   font-family: ${fonts.title};
   color: ${colors.primary};
   font-size: 3em;
   text-align: center;
   min-width: 355px;
+`;
+
+const Menu = styled.div`
+  grid-area: 12 / 1 / 2 / 1;
+  display: flex;
+  flex-direction: column;
+  @media (orientation: portrait) {
+    grid-area: 3 / 5 / 2 / 1;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+
+  svg {
+    border-radius: 50%;
+    border: solid 4px black;
+    margin: 5px;
+    padding: 7px;
+  }
+
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: black;
+    text-decoration: none;
+    font-size: 1.25em;
+    font-family: ${fonts.subtitle};
+    margin-bottom: 20px;
+    @media (orientation: portrait) {
+      margin-right: 20px;
+    }
+  }
 `;
 
 const Section = styled.div`
@@ -101,17 +172,29 @@ const Section = styled.div`
   grid-column-gap: 0px;
   grid-row-gap: 0px;
 
-  &:nth-child(2) {
-    grid-area: 2 / 1 / 7 / 3;
-  }
   &:nth-child(3) {
-    grid-area: 2 / 3 / 7 / 5;
+    grid-area: 2 / 2 / 7 / 4;
+    @media (orientation: portrait) {
+      grid-area: 3 / 1 / 8 / 3;
+    }
   }
   &:nth-child(4) {
-    grid-area: 7 / 1 / 12 / 3;
+    grid-area: 2 / 4 / 7 / 6;
+    @media (orientation: portrait) {
+      grid-area: 3 / 3 / 8 / 5;
+    }
   }
   &:nth-child(5) {
-    grid-area: 7 / 3 / 12 / 5;
+    grid-area: 7 / 2 / 12 / 4;
+    @media (orientation: portrait) {
+      grid-area: 8 / 1 / 13 / 3;
+    }
+  }
+  &:nth-child(6) {
+    grid-area: 7 / 4 / 12 / 6;
+    @media (orientation: portrait) {
+      grid-area: 8 / 3 / 13 / 5;
+    }
     background-color: ${colors.secondary};
     color: ${colors.dark};
     h2 {
@@ -182,8 +265,10 @@ const Item = styled.div`
     }
   }
 
-  > span:first-of-type {
+  > a {
     flex: 1;
+    color: ${colors.dark};
+    text-decoration: none;
     padding-left: 1em;
   }
 `;

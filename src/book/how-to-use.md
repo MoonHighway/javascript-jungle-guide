@@ -1,15 +1,14 @@
 import plates from "./\_assets/images/spinning-plates.png";
+import { Row } from "../book-ui"
 
 # How to Use This Guide
 
 Teaching a live class is hard, and it's hard for a different reason every time. To make matters worse, you won't know the reason why it'll be hard until it's happening. Technical difficulties will cause chaos. Logistical problems will cause distractions. Students will arrive with wildly different experience levels and expectations. Throughout all of that, your job as an instructor is to be calm, laid back, empathetic, technical, likeable, flexible, and comprehensible - all at the same time.
 
-This guide is here to help you teach your best classes. It's here to help you control what is in your control. Think of this guide as being your teaching assistant, your friendly and very prepared helper to keep you on topic and on time. While you're spinning plates and walking on stilts, rely on this guide to make you feel firmly rooted.
-
+<Row>
 <img src={plates} height={200} />
-<figcaption>
-  <i>You</i>
-</figcaption>
+This guide is here to help you teach your best classes. It's here to help you control what is in your control. Think of this guide as being your teaching assistant, your friendly and very prepared helper to keep you on topic and on time. While you're spinning plates and walking on stilts, rely on this guide to make you feel firmly rooted.
+</Row>
 
 ## Pre-Class Setup
 

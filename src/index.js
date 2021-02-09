@@ -8,7 +8,6 @@ import HowToUse from "./pages/HowToUse";
 import Overview from "./pages/Overview";
 import End from "./pages/End";
 import TOC from "./pages/TOC";
-import BookComponents from "./pages/BookComponents";
 
 render(
   <>
@@ -23,9 +22,6 @@ render(
         </Route>
         <Route path="/how-to-use">
           <HowToUse />
-        </Route>
-        <Route path="/book-components">
-          <BookComponents />
         </Route>
         <Route path="/overview">
           <Overview />
