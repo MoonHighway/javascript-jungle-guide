@@ -1,4 +1,4 @@
-# Universal and Isomorphic (5 min)
+# Universal and Isomorphic
 
 - Run Node code above in the browser (explain why it doesn't work)
 - Run the Browser code from the "Older than JS" exercise in node (explain why it doesn't work)

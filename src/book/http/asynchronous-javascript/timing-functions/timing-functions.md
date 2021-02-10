@@ -1,4 +1,4 @@
-# Timing Functions (4 mins)
+# Timing Functions
 
 (1) How to wait 6 seconds before showtime
 

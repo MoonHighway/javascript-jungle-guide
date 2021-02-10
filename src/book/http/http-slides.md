@@ -2,7 +2,11 @@
 
 In this section, we'll take a closer look at HTTP with slides.
 
-- Open the HTTP Slides as the `http-slides.html`
+Open the slides on `localhost:5000` using:
+
+```vi
+npm run http
+```
 
 ## Talking Points
 
