@@ -2,9 +2,13 @@
 
 1. Getting PI
 
-- `Math.PI`
+```javascript
+console.log(Math.PI);
+```
 
 2. Math.max and Math.min
 
-- `Math.min(age,8)`
-- `Math.max(age,8)`
+```javascript
+console.log(Math.min(age, 8));
+console.log(Math.max(age, 8));
+```

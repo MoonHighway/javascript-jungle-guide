@@ -1,5 +1,7 @@
 # Converting Floats to Numbers
 
-- `Math.floor(netWorth)`
-- `Math.ceil(netWorth)`
-- `Math.round(netWorth)`
+```javascript
+console.log(Math.floor(netWorth));
+console.log(Math.ceil(netWorth));
+console.log(Math.round(netWorth));
+```

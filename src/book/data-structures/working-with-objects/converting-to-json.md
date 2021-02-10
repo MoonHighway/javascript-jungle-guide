@@ -1,6 +1,6 @@
-# More with Objects (5 min)
+# More with Objects
 
-(1) Converting to JSON Strings 🦐
+(1) Converting to JSON Strings
 
 ```javascript
 const agenda = {
@@ -28,13 +28,13 @@ const agendaJSON = JSON.stringify(agenda, null, 2);
 console.log(agendaJSON);
 ```
 
-(2) Converting JSON Strings back to Objects 🦐
+(2) Converting JSON Strings back to Objects
 
 ```javascript
 const backToObject = JSON.parse(agendaJSON);
 ```
 
-(3) Loading JSON from a file 🦐
+(3) Loading JSON from a file
 
 ```javascript
 const agenda = require("./agenda.json");

@@ -4,7 +4,7 @@ This is a lab activity for the DOT Click. Before you start building, make sure t
 
 Run the lab slide to start:
 
-```
+```vi
 npm run dot-click
 ```
 
