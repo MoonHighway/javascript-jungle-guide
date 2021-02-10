@@ -1,6 +1,6 @@
 # Creating Arrays of Objects
 
-(1) Create an array of instruments 🦐
+(1) Create an array of instruments
 
 ```javascript
 const instruments = [
@@ -19,7 +19,7 @@ const instruments = [
 ];
 ```
 
-(2) Get individual objects from within the array 🦐
+(2) Get individual objects from within the array
 
 ```javascript
 console.log(instruments[1].type);

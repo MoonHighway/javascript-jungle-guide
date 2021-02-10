@@ -314,7 +314,9 @@
           "type": "lab",
           "length": 10,
           "agenda": [
-            { "title": "lab-overview", "required": true }
+            { "title": "lab-overview", "required": true },
+            { "title": "compare-ages", "required": true },
+            { "title": "compare-birthdays" }
           ]
         }
       ]
@@ -448,7 +450,7 @@
           "type": "lab"
         },
         {
-          "title": "Create a Variable for the Mood",
+          "title": "Create Mood Variable",
           "type": "lab"
         },
         { "title": "Incorporate Readline", "type": "lab" },
