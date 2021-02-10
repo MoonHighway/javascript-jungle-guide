@@ -3,7 +3,7 @@
 (1) Parse Question and Answer
 
 ```javascript
-fetch("https://opendb.com/api.php?amount=1")
+fetch("https://opentdb.com/api.php?amount=1")
   .then(response => response.json())
   .then(json => json.results[0])
   .then(({ question, correct_answer }) => ({
@@ -17,7 +17,7 @@ fetch("https://opendb.com/api.php?amount=1")
 (2) Print Data on DOM
 
 ```javascript
-fetch("https://opendb.com/api.php?amount=1")
+fetch("https://opentdb.com/api.php?amount=1")
   .then(response => response.json())
   .then(json => json.results[0])
   .then(({ question, correct_answer }) => ({
@@ -55,7 +55,7 @@ const print = ({ question, answer }) => {
     `;
 };
 
-fetch("https://opendb.com/api.php?amount=1")
+fetch("https://opentdb.com/api.php?amount=1")
   .then(parseResponseBody)
   .then(grabFirstResult)
   .then(filterQuestionAnswer)

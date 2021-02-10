@@ -440,11 +440,6 @@
           "type": "lab"
         },
         {
-          "title": "Serve the CSS File",
-          "required": "true",
-          "type": "lab"
-        },
-        {
           "title": "Serve the Image",
           "required": "true",
           "type": "lab"

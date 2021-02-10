@@ -4,7 +4,7 @@
 
 ```javascript
 function getQuestion() {
-  return fetch("https://opendb.com/api.php?amount=1")
+  return fetch("https://opentdb.com/api.php?amount=1")
     .then((response) => response.json())
     .then((json) => json.results[0])
     .then(({ question, correct_answer }) => ({
@@ -26,7 +26,7 @@ function printQuestion({ question, answer }) => {
 ```javascript
 async function retrieveQuestion() {
   const response = await fetch(
-    "https://opendb.com/api.php?amount=1"
+    "https://opentdb.com/api.php?amount=1"
   );
   const json = await response.json();
   const { question, correct_answer } = json.results[0];
