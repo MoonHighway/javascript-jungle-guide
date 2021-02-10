@@ -1,4 +1,4 @@
-# Collect input in Node (5 min)
+# Collect input in Node
 
 ```javascript
 const readline = require("readline");

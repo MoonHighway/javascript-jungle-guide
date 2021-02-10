@@ -2,7 +2,13 @@
 
 In this lab, we'll put our skills to work by loading JSON data.
 
-Open up the slides for the students: [https://slides.com/moonhighway/objects-arrays-lab/](https://slides.com/moonhighway/objects-arrays-lab/)
+Open the slides for students. Run:
+
+```vi
+npm run objects-arrays
+```
+
+Then open the slides on localhost:5000.
 
 There are a couple files of note:
 

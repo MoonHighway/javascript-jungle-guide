@@ -1,8 +1,4 @@
-# Objects and Literal Notation (5 min)
-
-Show slide with highlighted objects in periodic table.
-
-![Periodic Table of JavaScript (Objects)]()
+# Objects and Literal Notation
 
 (1) Object Literal Notation
 

@@ -10,13 +10,13 @@ console.log("This is JavaScript Too");
 
 - Open the terminal to run in node:
 
-```bash
+```vi
 node playground.js
 ```
 
 As the instructor, it's a good idea to run:
 
-```
+```vi
 clear; node playground.js
 ```
 

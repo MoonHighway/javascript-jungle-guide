@@ -1,4 +1,4 @@
-# Keys and Brackets (5 min)
+# Keys and Brackets
 
 (1) For in loop
 
@@ -22,7 +22,7 @@ for (let key in agenda) {
 ```javascript
 const agenda = {
   name: "JavaScript Jungle",
-  ["max partacipants"]: 20
+  ["max participants"]: 20
 };
 
 console.log(agenda["max participants"]);
