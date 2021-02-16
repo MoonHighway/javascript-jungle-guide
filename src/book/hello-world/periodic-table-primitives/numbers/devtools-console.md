@@ -6,7 +6,7 @@
 - Show where the tags are `Elements Console Sources Network >>`
 - Switch between `Elements` and `Console`
 - Show how to position the dev tools on the bottom or to the side
-- show how to clear the console
+- Show how to clear the console
 - Show how to show and hide the console options
 - Uncheck the preserve console log option
 
@@ -22,7 +22,7 @@ console.log("multiply", age * netWorth);
 console.log("divide", age / netWorth);
 ```
 
-(3) Show that the type of both vars is number.
+(3) Show that the type of both variables is number.
 
 ```javascript
 console.log(typeof age);

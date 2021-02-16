@@ -353,7 +353,7 @@
             },
             {
               "title": "timing-functions",
-              "length": 4,
+              "length": 6,
               "agenda": [
                 {
                   "title": "timing-functions",
@@ -364,7 +364,7 @@
             },
             {
               "title": "fetch",
-              "length": 4,
+              "length": 6,
               "agenda": [
                 {
                   "title": "using-fetch",
@@ -375,7 +375,7 @@
             },
             {
               "title": "async-await",
-              "length": 4,
+              "length": 5,
               "agenda": [
                 {
                   "title": "async-await-intro",
@@ -386,7 +386,7 @@
             },
             {
               "title": "generators",
-              "length": 3,
+              "length": 8,
               "agenda": [
                 {
                   "title": "generators-intro",
@@ -405,27 +405,22 @@
           "agenda": [
             {
               "title": "text-files",
-              "length": 4,
+              "length": 5,
               "required": true
             },
             {
               "title": "web-server",
-              "length": 4,
+              "length": 5,
               "required": true
             },
             {
               "title": "serve-files",
-              "length": 4,
+              "length": 5,
               "required": true
             },
-            { "title": "creating-a-route", "length": 4 },
-            { "title": "fetching-data", "length": 4 }
+            { "title": "creating-a-route", "length": 5 },
+            { "title": "fetching-data", "length": 5 }
           ]
-        },
-        {
-          "title": "Fetching Remote Data",
-          "type": "exercise",
-          "length": 15
         }
       ]
     },
