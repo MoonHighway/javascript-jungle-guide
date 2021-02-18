@@ -13,6 +13,6 @@ for (let number = 1; number <= 5; number++) {
 ```javascript
 for (let number = 0; number < myList.length; number++) {
   console.log(number);
-  console.log(myList[i]);
+  console.log(myList[number]);
 }
 ```
