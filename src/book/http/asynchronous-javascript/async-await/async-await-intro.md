@@ -26,7 +26,7 @@ getQuestion().then(printQuestion);
 (2) Using async/await
 
 ```javascript
-async function getQuestion() {
+async function retrieveQuestion() {
   const response = await fetch(
     "https://opentdb.com/api.php?amount=1"
   );
@@ -45,5 +45,5 @@ function printQuestion({ question, answer }) {
       `;
 }
 
-getQuestion().then(printQuestion);
+retrieveQuestion().then(printQuestion);
 ```
