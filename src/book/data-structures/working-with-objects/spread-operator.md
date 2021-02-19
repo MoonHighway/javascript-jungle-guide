@@ -8,7 +8,7 @@ const agenda = {
   maxParticipants: 20,
   topics: ["browser", "node", "http"],
   instructor: {
-    ...location
+    ...location,
     name: "Alex Banks",
     hometown: "Tahoe City",
   },
