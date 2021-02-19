@@ -13,7 +13,7 @@ function getQuestion() {
     }))
 }
 
-function printQuestion({ question, answer }) => {
+function printQuestion({ question, answer }) {
     document.body.innerHTML = `
       <h1>${question}</h1>
       <h2>answer: ${answer}</h2>
