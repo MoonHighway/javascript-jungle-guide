@@ -8,13 +8,13 @@ function showtime() {
 }
 
 console.log("6 seconds, Doug E. Fresh you're on!");
-showTime();
+showtime();
 ```
 
 (2) Running JavaScript synchronously
 
 ```javascript
-showTime();
+showtime();
 console.log("6 seconds, Doug E. Fresh you're on!");
 ```
 
