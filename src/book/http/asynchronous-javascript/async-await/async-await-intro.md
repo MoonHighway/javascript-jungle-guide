@@ -5,26 +5,28 @@
 ```javascript
 function getQuestion() {
   return fetch("https://opentdb.com/api.php?amount=1")
-    .then((response) => response.json())
-    .then((json) => json.results[0])
+    .then(response => response.json())
+    .then(json => json.results[0])
     .then(({ question, correct_answer }) => ({
       question,
-      answer: correct_answer,
-    }))
+      answer: correct_answer
+    }));
 }
 
 function printQuestion({ question, answer }) {
-    document.body.innerHTML = `
+  document.body.innerHTML = `
       <h1>${question}</h1>
       <h2>answer: ${answer}</h2>
     `;
-  }
+}
+
+getQuestion().then(printQuestion);
 ```
 
 (2) Using async/await
 
 ```javascript
-async function retrieveQuestion() {
+async function getQuestion() {
   const response = await fetch(
     "https://opentdb.com/api.php?amount=1"
   );
@@ -35,4 +37,13 @@ async function retrieveQuestion() {
     answer: correct_answer
   };
 }
+
+function printQuestion({ question, answer }) {
+  document.body.innerHTML = `
+        <h1>${question}</h1>
+        <h2>answer: ${answer}</h2>
+      `;
+}
+
+getQuestion().then(printQuestion);
 ```
