@@ -5,7 +5,10 @@
       "title": "Hello World",
       "type": "section",
       "agenda": [
-        { "title": "Chapter Overview", "type": "meta" },
+        {
+          "title": "Chapter Overview",
+          "type": "meta"
+        },
         {
           "title": "Intro Slides",
           "length": 5,
@@ -16,8 +19,14 @@
           "type": "exercise",
           "length": 5,
           "agenda": [
-            { "title": "install-vscode", "required": true },
-            { "title": "student-files", "required": true }
+            {
+              "title": "install-vscode",
+              "required": true
+            },
+            {
+              "title": "student-files",
+              "required": true
+            }
           ]
         },
         {
@@ -25,8 +34,13 @@
           "length": 5,
           "type": "sample",
           "agenda": [
-            { "title": "review-html", "required": true },
-            { "title": "review-css" }
+            {
+              "title": "review-html",
+              "required": true
+            },
+            {
+              "title": "review-css"
+            }
           ]
         },
         {
@@ -41,14 +55,23 @@
                   "title": "add-script-to-page",
                   "required": true
                 },
-                { "title": "numbers", "required": true },
+                {
+                  "title": "numbers",
+                  "required": true
+                },
                 {
                   "title": "devtools-console",
                   "required": true
                 },
-                { "title": "converting-floats-to-numbers" },
-                { "title": "math-constants" },
-                { "title": "random-number" }
+                {
+                  "title": "converting-floats-to-numbers"
+                },
+                {
+                  "title": "math-constants"
+                },
+                {
+                  "title": "random-number"
+                }
               ]
             },
             {
@@ -67,16 +90,25 @@
                   "title": "template-strings",
                   "required": true
                 },
-                { "title": "string-length" },
-                { "title": "whitespace" },
-                { "title": "string-functions" }
+                {
+                  "title": "string-length"
+                },
+                {
+                  "title": "whitespace"
+                },
+                {
+                  "title": "string-functions"
+                }
               ]
             },
             {
               "title": "booleans",
               "length": 3,
               "agenda": [
-                { "title": "if-else", "required": true },
+                {
+                  "title": "if-else",
+                  "required": true
+                },
                 {
                   "title": "ternary-statements",
                   "required": true
@@ -117,9 +149,15 @@
                   "title": "set-array-values",
                   "required": true
                 },
-                { "title": "push-pop" },
-                { "title": "store-anything" },
-                { "title": "multi-dimensional-arrays" }
+                {
+                  "title": "push-pop"
+                },
+                {
+                  "title": "store-anything"
+                },
+                {
+                  "title": "multi-dimensional-arrays"
+                }
               ]
             },
             {
@@ -142,9 +180,15 @@
                   "title": "array-of-objects",
                   "required": true
                 },
-                { "title": "nesting-objects" },
-                { "title": "adding-arrays-to-objects" },
-                { "title": "push-object-into-array" }
+                {
+                  "title": "nesting-objects"
+                },
+                {
+                  "title": "adding-arrays-to-objects"
+                },
+                {
+                  "title": "push-object-into-array"
+                }
               ]
             },
             {
@@ -155,7 +199,10 @@
                   "title": "declaring-functions",
                   "required": true
                 },
-                { "title": "hoisting", "required": true },
+                {
+                  "title": "hoisting",
+                  "required": true
+                },
                 {
                   "title": "functions-as-values",
                   "required": true
@@ -172,9 +219,15 @@
                   "title": "arrow-functions",
                   "required": true
                 },
-                { "title": "anonymous-functions" },
-                { "title": "setting-window-onload" },
-                { "title": "first-last-challenge" }
+                {
+                  "title": "anonymous-functions"
+                },
+                {
+                  "title": "setting-window-onload"
+                },
+                {
+                  "title": "first-last-challenge"
+                }
               ]
             },
             {
@@ -188,9 +241,18 @@
           "type": "sample",
           "length": 10,
           "agenda": [
-            { "title": "create-date", "required": true },
-            { "title": "set-date", "required": true },
-            { "title": "subtract-years", "required": true },
+            {
+              "title": "create-date",
+              "required": true
+            },
+            {
+              "title": "set-date",
+              "required": true
+            },
+            {
+              "title": "subtract-years",
+              "required": true
+            },
             {
               "title": "working-dom-elements",
               "required": true
@@ -199,11 +261,21 @@
               "title": "working-dom-form",
               "required": true
             },
-            { "title": "calc-results" },
-            { "title": "edge-cases" },
-            { "title": "improve-results" },
-            { "title": "display-results" },
-            { "title": "save-results" }
+            {
+              "title": "calc-results"
+            },
+            {
+              "title": "edge-cases"
+            },
+            {
+              "title": "improve-results"
+            },
+            {
+              "title": "display-results"
+            },
+            {
+              "title": "save-results"
+            }
           ]
         },
         {
@@ -211,10 +283,20 @@
           "type": "lab",
           "length": 10,
           "agenda": [
-            { "title": "respond-click", "required": true },
-            { "title": "count-clicks", "required": true },
-            { "title": "display-total" },
-            { "title": "plural-times" }
+            {
+              "title": "respond-click",
+              "required": true
+            },
+            {
+              "title": "count-clicks",
+              "required": true
+            },
+            {
+              "title": "display-total"
+            },
+            {
+              "title": "plural-times"
+            }
           ]
         }
       ]
@@ -223,18 +305,27 @@
       "title": "Data Structures",
       "type": "section",
       "agenda": [
-        { "title": "Chapter Overview", "type": "meta" },
+        {
+          "title": "Chapter Overview",
+          "type": "meta"
+        },
         {
           "title": "Install Node",
           "type": "exercise",
           "length": 3,
           "agenda": [
-            { "title": "check-version", "required": true },
+            {
+              "title": "check-version",
+              "required": true
+            },
             {
               "title": "installing-node",
               "required": true
             },
-            { "title": "running-a-file", "required": true }
+            {
+              "title": "running-a-file",
+              "required": true
+            }
           ]
         },
         {
@@ -242,19 +333,41 @@
           "type": "sample",
           "length": 12,
           "agenda": [
-            { "title": "overview", "required": true },
-            { "title": "the-array-type", "required": true },
+            {
+              "title": "overview",
+              "required": true
+            },
+            {
+              "title": "the-array-type",
+              "required": true
+            },
             {
               "title": "initializing-with-values",
               "required": true
             },
-            { "title": "split-join", "required": true },
-            { "title": "push-pop", "required": true },
-            { "title": "shift-unshift" },
-            { "title": "splicing-arrays" },
-            { "title": "storing-values" },
-            { "title": "for-loops" },
-            { "title": "more-loops" }
+            {
+              "title": "split-join",
+              "required": true
+            },
+            {
+              "title": "push-pop",
+              "required": true
+            },
+            {
+              "title": "shift-unshift"
+            },
+            {
+              "title": "splicing-arrays"
+            },
+            {
+              "title": "storing-values"
+            },
+            {
+              "title": "for-loops"
+            },
+            {
+              "title": "more-loops"
+            }
           ]
         },
         {
@@ -270,7 +383,9 @@
               "title": "working-with-flags",
               "required": true
             },
-            { "title": "node-age-check" }
+            {
+              "title": "node-age-check"
+            }
           ]
         },
         {
@@ -282,19 +397,31 @@
               "title": "object-literal-notation",
               "required": true
             },
-            { "title": "print-method", "required": true },
+            {
+              "title": "print-method",
+              "required": true
+            },
             {
               "title": "keys-and-brackets",
               "required": true
             },
-            { "title": "destructuring", "required": true },
+            {
+              "title": "destructuring",
+              "required": true
+            },
             {
               "title": "spread-operator",
               "required": true
             },
-            { "title": "using-fields" },
-            { "title": "converting-to-json" },
-            { "title": "using-a-factory" }
+            {
+              "title": "using-fields"
+            },
+            {
+              "title": "converting-to-json"
+            },
+            {
+              "title": "using-a-factory"
+            }
           ]
         },
         {
@@ -306,7 +433,9 @@
               "title": "collecting-input",
               "required": true
             },
-            { "title": "universal-isomorphic" }
+            {
+              "title": "universal-isomorphic"
+            }
           ]
         },
         {
@@ -314,9 +443,17 @@
           "type": "lab",
           "length": 10,
           "agenda": [
-            { "title": "lab-overview", "required": true },
-            { "title": "compare-ages", "required": true },
-            { "title": "compare-birthdays" }
+            {
+              "title": "lab-overview",
+              "required": true
+            },
+            {
+              "title": "compare-ages",
+              "required": true
+            },
+            {
+              "title": "compare-birthdays"
+            }
           ]
         }
       ]
@@ -325,7 +462,10 @@
       "title": "HTTP",
       "type": "section",
       "agenda": [
-        { "title": "Chapter Overview", "type": "meta" },
+        {
+          "title": "Chapter Overview",
+          "type": "meta"
+        },
         {
           "title": "HTTP Slides",
           "type": "slides",
@@ -347,8 +487,12 @@
                   "title": "destructuring-objects",
                   "required": true
                 },
-                { "title": "functions-as-methods" },
-                { "title": "passing-info-back" }
+                {
+                  "title": "functions-as-methods"
+                },
+                {
+                  "title": "passing-info-back"
+                }
               ]
             },
             {
@@ -359,7 +503,9 @@
                   "title": "timing-functions",
                   "required": true
                 },
-                { "title": "settimeout-setinterval" }
+                {
+                  "title": "settimeout-setinterval"
+                }
               ]
             },
             {
@@ -370,7 +516,9 @@
                   "title": "using-fetch",
                   "required": true
                 },
-                { "title": "enhancing-fetch" }
+                {
+                  "title": "enhancing-fetch"
+                }
               ]
             },
             {
@@ -381,7 +529,9 @@
                   "title": "async-await-intro",
                   "required": true
                 },
-                { "title": "error-handling" }
+                {
+                  "title": "error-handling"
+                }
               ]
             },
             {
@@ -392,9 +542,15 @@
                   "title": "generators-intro",
                   "required": true
                 },
-                { "title": "create-an-interval" },
-                { "title": "yield" },
-                { "title": "async-generators" }
+                {
+                  "title": "create-an-interval"
+                },
+                {
+                  "title": "yield"
+                },
+                {
+                  "title": "async-generators"
+                }
               ]
             }
           ]
@@ -418,8 +574,14 @@
               "length": 5,
               "required": true
             },
-            { "title": "creating-a-route", "length": 5 },
-            { "title": "fetching-data", "length": 5 }
+            {
+              "title": "creating-a-route",
+              "length": 5
+            },
+            {
+              "title": "fetching-data",
+              "length": 5
+            }
           ]
         }
       ]
@@ -443,12 +605,18 @@
           "title": "Create Mood Variable",
           "type": "lab"
         },
-        { "title": "Incorporate Readline", "type": "lab" },
+        {
+          "title": "Incorporate Readline",
+          "type": "lab"
+        },
         {
           "title": "Change the Mood Readline",
           "type": "lab"
         },
-        { "title": "Quit from Readline", "type": "lab" }
+        {
+          "title": "Quit from Readline",
+          "type": "lab"
+        }
       ]
     }
   ]
