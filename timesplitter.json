@@ -4,6 +4,7 @@
     {
       "title": "Hello World",
       "type": "section",
+      "required": true,
       "agenda": [
         {
           "title": "Chapter Overview",
@@ -304,6 +305,7 @@
     {
       "title": "Data Structures",
       "type": "section",
+      "required": true,
       "agenda": [
         {
           "title": "Chapter Overview",
@@ -461,6 +463,7 @@
     {
       "title": "HTTP",
       "type": "section",
+      "required": true,
       "agenda": [
         {
           "title": "Chapter Overview",
@@ -590,6 +593,7 @@
       "title": "Mood Server",
       "type": "course-lab",
       "length": 30,
+      "required": true,
       "agenda": [
         {
           "title": "Serve the HTML File",
