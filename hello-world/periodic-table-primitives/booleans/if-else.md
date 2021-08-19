@@ -1,6 +1,6 @@
 # If Else Statements
 
-Create a boolean and test it in an if statement.
+Now let's create a boolean called `isAnything` and test for whether it is true or false.
 
 ```javascript
 let isAnything = true;

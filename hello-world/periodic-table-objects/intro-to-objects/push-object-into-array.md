@@ -1,5 +1,7 @@
 # Pushing new objects into an array
 
+Earlier, we used `.push()` to add single values to an array. You can also push in entire objects.
+
 ```javascript
 const instruments = [];
 
@@ -15,3 +17,7 @@ instruments.push({
 
 console.log(instruments);
 ```
+
+<Warning>
+Always remember that the push method does mutate or change the original array. 
+</Warning>

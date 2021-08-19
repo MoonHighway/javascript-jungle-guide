@@ -1,6 +1,6 @@
 # Creating Arrays of Objects
 
-(1) Create an array of instruments
+A common data format is to create an array of objects. Create that array:
 
 ```javascript
 const instruments = [
@@ -19,9 +19,12 @@ const instruments = [
 ];
 ```
 
-(2) Get individual objects from within the array
+<Info>
+Student Challenge: Ask the students to return the type of the second instrument and the price of the third instrument.
 
 ```javascript
 console.log(instruments[1].type);
 console.log(instruments[2].price);
 ```
+
+</Info>

@@ -1,6 +1,10 @@
 # Declaring Functions
 
-(1) Declare function `sing`
+1. Create a function called `sing` with the `function` keyword.
+
+<Info>
+Make sure to describe how to call or invoke the function by using the function's name followed by a set of parentheses.
+</Info>
 
 ```javascript
 function sing() {
@@ -11,7 +15,7 @@ sing();
 sing();
 ```
 
-(2) Check typeof function
+2. Use `typeof` to return `function`
 
 ```javascript
 function sing() {

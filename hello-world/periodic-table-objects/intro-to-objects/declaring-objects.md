@@ -1,15 +1,15 @@
 # Declaring Objects
 
-(1) Create an instrument object
-
-```javascript
-const instrument = {};
-console.log(instrument);
-```
-
-(2) Create with new Object
+Like arrays, you can use a constructor to create an object.
 
 ```javascript
 const instrument = new Object();
+console.log(instrument);
+```
+
+But more than likely, you'll use a set of curly braces when defining an object. Like this instrument...
+
+```javascript
+const instrument = {};
 console.log(instrument);
 ```

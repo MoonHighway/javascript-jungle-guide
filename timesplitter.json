@@ -136,7 +136,7 @@
           "agenda": [
             {
               "title": "Intro to Arrays",
-              "length": 2,
+              "length": 5,
               "agenda": [
                 {
                   "title": "move-script",
@@ -230,10 +230,6 @@
                   "title": "first-last-challenge"
                 }
               ]
-            },
-            {
-              "title": "Questions and Answers",
-              "length": 3
             }
           ]
         },
