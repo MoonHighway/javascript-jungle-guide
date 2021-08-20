@@ -1,5 +1,8 @@
 # Using Shift and Unshift
 
+- `.shift()`: Removes the first element from an array and returns that new element. This mutates the array and changes the array's length.
+- `.unshift`: Adds one or more elements to the beginning of an array and returns the new length of the array.
+
 ```javascript
 const myList = [
   "plan trip",

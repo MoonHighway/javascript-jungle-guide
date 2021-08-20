@@ -1,6 +1,8 @@
 # Add Print Method to Object
 
-(1) Print Method
+Objects can have methods, meaning functions that are embedded in the object.
+
+1. The print method will log details about the agenda. Add the print method to the agenda:
 
 ```javascript
 print() {
@@ -13,11 +15,13 @@ print() {
 }
 ```
 
----
+2. Then call the method:
 
-Bonus:
+```javascript
+agenda.print();
+```
 
-(a) Add Print Function to Object
+3. Values from the object can also be referenced with `this`. `this` refers to the object:
 
 ```javascript
 print() {
@@ -30,10 +34,11 @@ print() {
 }
 ```
 
-(b) Introduce issues with `this` scope
+3. A common gotcha with `this` in JavaScript is when it's used in combination with an arrow function. Notice what `this` refers to when this is updated to an arrow.
 
-```javascript
+```javascript select=1
 print: () => {
+  // console.log(this);
   console.log(`
         ${this.name.toUpperCase()}
         ===========================
@@ -44,3 +49,11 @@ print: () => {
     `);
 };
 ```
+
+<Error>
+This step will cause an error. You can console.log(this) inside of the function to show that this refers to the current module you're in.
+</Error>
+
+<Question title="What is this?">
+this refers to whatever scope you're in. In Node.js, it's either a function/object or the file. In the browser, it's a function/object or the window.
+</Question>

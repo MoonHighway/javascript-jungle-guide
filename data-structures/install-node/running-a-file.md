@@ -1,8 +1,9 @@
 # Running a File
 
-- Node.js files are just JavaScript files that are run with `node` + the name of the file.
-- Create a file called `playground.js`.
-- Add a console.log message to the file:
+Node.js files are just JavaScript files that are run with `node` + the name of the file.
+
+1. Create a file called `playground.js`.
+2. Add a console.log message to the file:
 
 ```javascript
 console.log("This is JavaScript Too");

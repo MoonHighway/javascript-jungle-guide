@@ -1,6 +1,10 @@
 # More Loops
 
-(1) Clean up to look like "real world"
+Let's make this loop a bit more usable.
+
+- Usually, we use `i` instead of `number` for the sake of brevity.
+- We also don't want to set an arbitrary number to look through. We want to loop through the length of the array.
+- Then tweak the console log to display both values in a template string.
 
 ```javascript
 for (let i = 0; i < myList.length; i++) {
@@ -8,7 +12,7 @@ for (let i = 0; i < myList.length; i++) {
 }
 ```
 
-(2) Reverse the order of the for loop
+It's also possible to reverse the loop:
 
 ```javascript
 for (let i = myList.length - 1; i >= 0; i--) {

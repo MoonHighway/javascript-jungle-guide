@@ -1,6 +1,8 @@
 # The Array Type
 
-(1) Define Arrays
+Start with a refresher of the array type and two ways to create an array.
+
+1. Define Arrays
 
 ```javascript
 const yourList = new Array();
@@ -10,7 +12,9 @@ console.log(yourList);
 console.log(myList);
 ```
 
-(2) Checking For Arrays
+2. Go over how to check to see if something is an array. If you check the typeof an Array or Date, it will be called an object.
+
+If you check for something being an `instanceof` something, the result will be more specific.
 
 ```javascript
 const myList = [];
