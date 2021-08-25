@@ -1,8 +1,8 @@
 # Object and Array Lab
 
-In this lab, we'll put our skills to work by loading JSON data.
+In this lab, we'll put our skills to work by loading JSON data. It's highly unlikely that we'll get to both parts (probably skip Compare Birthdays).
 
-Open the slides for students. Run:
+Open the instructions slides for students. Run the following in the student files:
 
 ```vi
 npm run objects-arrays

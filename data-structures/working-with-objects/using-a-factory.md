@@ -1,5 +1,7 @@
 # Using a Factory to Create Agenda Objects
 
+Here we'll create a reusable function that is responsible for creating objects:
+
 ```javascript
 const agenda = createAgenda({
   name: "JavaScript Jungle",

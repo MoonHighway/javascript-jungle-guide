@@ -1,8 +1,6 @@
 # Splicing Arrays
 
-## The CRISPR of JavaScript
-
-(1) Splicing Items
+- `.splice()`: This method changes the contents of an array by removing or replacing existing elements. If you pass in `2` and `1` to this method, you'll delete 1 item from the array starting at position 2.
 
 ```javascript
 const myList = [
@@ -22,7 +20,7 @@ myList.splice(1, 0, "pack mobile kitchen");
 console.log(myList);
 ```
 
-(2) Array Concatenation
+- `.concat()`: Used to merge two or more arrays. This does not change the existing array, just returns a new array.
 
 ```javascript
 const myList = [

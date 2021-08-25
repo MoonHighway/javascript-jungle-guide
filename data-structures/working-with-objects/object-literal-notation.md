@@ -1,6 +1,8 @@
 # Objects and Literal Notation
 
-(1) Object Literal Notation
+Let's create an object using object literal notation:
+
+1. Object Literal Notation
 
 ```javascript
 const agenda = {
@@ -11,7 +13,7 @@ const agenda = {
 console.log(agenda);
 ```
 
-(2) Organizing Data with Arrays and Object Hierarchy
+2. Add to this with nested arrays and objects for topics and instructor.
 
 ```javascript
 const agenda = {

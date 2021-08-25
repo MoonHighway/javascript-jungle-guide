@@ -1,5 +1,7 @@
 # Node.js Age Check
 
+Here, we'll use the `argval` function to check whether the person's age is older, younger, or the same age as JavaScript.
+
 ```javascript
 let name = argval("name");
 let age = parseInt(argval("age"));

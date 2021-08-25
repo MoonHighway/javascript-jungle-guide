@@ -348,17 +348,10 @@
               "required": true
             },
             {
-              "title": "push-pop",
-              "required": true
-            },
-            {
               "title": "shift-unshift"
             },
             {
               "title": "splicing-arrays"
-            },
-            {
-              "title": "storing-values"
             },
             {
               "title": "for-loops"

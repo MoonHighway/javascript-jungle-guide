@@ -2,7 +2,7 @@
 
 This is bonus content if you're moving through the class quickly!
 
-(1) Using Fields
+1. Using Fields
 
 ```javascript
 for (let key in agenda) {
@@ -12,7 +12,7 @@ for (let key in agenda) {
 }
 ```
 
-(2) Using `Object.keys` for looping
+2. Using `Object.keys` for looping
 
 ```javascript
 const keys = Object.keys(agenda);

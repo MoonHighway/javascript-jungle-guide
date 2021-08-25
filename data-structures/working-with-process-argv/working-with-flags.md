@@ -1,5 +1,10 @@
 # Working with Flags
 
+It's also possible to pass values when you run the node program with flags. If you pass the `--name` flag, this can be captured and echoed back.
+
+1. Run this with the name flag: `node test --name "Jason"`
+2. Later run with both name and age: `node test --name "Jason" --age 100`
+
 ```javascript
 if (process.argv.includes("--name")) {
   let index = process.argv.indexOf("--name");

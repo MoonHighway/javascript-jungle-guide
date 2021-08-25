@@ -1,5 +1,7 @@
 # Initializing an Array with Values
 
+More commonly, you'll create an array with values added to it.
+
 ```javascript
 const myList = [
   "plan trip",
