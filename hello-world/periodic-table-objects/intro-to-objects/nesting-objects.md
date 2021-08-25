@@ -1,5 +1,7 @@
 # Nesting Objects Inside of Other Objects
 
+You can also nest objects inside of other objects. To access the values from the nested objects, chain on more properties.
+
 ```javascript
 const instrument = {
   type: "guitar",

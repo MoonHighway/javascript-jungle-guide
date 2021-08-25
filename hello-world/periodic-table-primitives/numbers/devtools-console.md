@@ -1,8 +1,8 @@
 # DevTools Console
 
-(1) Open the dev tools and cover the console
+1. Open the dev tools and cover the console
 
-- Show how to get to the dev tools
+- Show how to get to the dev tools in Google Chrome
 - Show where the tags are `Elements Console Sources Network >>`
 - Switch between `Elements` and `Console`
 - Show how to position the dev tools on the bottom or to the side
@@ -10,7 +10,7 @@
 - Show how to show and hide the console options
 - Uncheck the preserve console log option
 
-(2) Add a float `netWorth` and demo math operations.
+2.  Add a float `netWorth` and demo math operations.
 
 ```javascript
 var age = 35;
@@ -22,7 +22,7 @@ console.log("multiply", age * netWorth);
 console.log("divide", age / netWorth);
 ```
 
-(3) Show that the type of both variables is number.
+3. Show that the type of both variables is number. `typeof` is a reserved word in JavaScript that returns a variable's type.
 
 ```javascript
 console.log(typeof age);

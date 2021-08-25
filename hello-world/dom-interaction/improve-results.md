@@ -1,5 +1,7 @@
 # Improving the Results
 
+You could even calculate _how much_ older or younger than JavaScript the person completing the form might be.
+
 ```javascript
 const results =
   inputName.value > jsAge

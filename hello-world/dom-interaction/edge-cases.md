@@ -1,5 +1,7 @@
 # Edge Cases
 
+What happens if someone is the same age as JavaScript? We can adjust the ternary statement to handle that case.
+
 ```javascript
 const results =
   inputName.value > jsAge

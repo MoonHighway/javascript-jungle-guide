@@ -1,15 +1,23 @@
 # Object Dot Notation
 
-(1) Use dot notation to set values
+Unlike arrays where we set and accessed values by position, we use dot notation with objects.
+
+First, we can set an instrument's type and price:
 
 ```javascript
-const instrument = new Object();
+const instrument = {};
 instrument.type = "guitar";
 instrument.price = 199.99;
 ```
 
-(2) Use dot notation to get values
+Then we'll use dot notation to access these values:
 
 ```javascript
-console.log(`The ${instrument.type} is $${instrument.price}.)
+console.log(
+  `The ${instrument.type} is $${instrument.price}.`
+);
 ```
+
+<Info>
+Notice how we use the template string to parse this object. We also use double dollar signs for the instrument price: one for the displayed price and one for the template.
+</Info>

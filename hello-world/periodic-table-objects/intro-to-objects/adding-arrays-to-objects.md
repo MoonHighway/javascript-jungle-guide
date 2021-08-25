@@ -1,5 +1,7 @@
 # Nesting arrays in objects
 
+An object's key value pairs do not necessarily have to hold single values. For example, a store object might have an inventory, an array of objects.
+
 ```javascript
 const store = {
   name: "Music Metropolis",
@@ -22,6 +24,7 @@ const store = {
   ]
 };
 
+// Make this part a challenge if there is time!
 console.log(store.name);
 console.log(store.inventory.length);
 console.log(
