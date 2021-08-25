@@ -1,28 +1,8 @@
-# JavaScript Jungle Timesplitter Overview
-
-Timesplitter is a tool that will help you stay on track while teaching a class. This guide will run in the Timesplitter app to give you notes on content and timing throughout, helping you teach an on-time class with less stress.
-
-## Running this Guide Using Timesplitter
-
-After cloning or downloading this repository, run the following:
-
-```
-cd javascript-jungle-guide
-npm install
-npm start
-```
-
-This will run Timesplitter on `localhost:4224` in the browser. When you click the **Start** link in the lower right hand corner of the screen, you'll see the Table of Contents. This gives you the following:
-
-- Course Overview Link
-- How to Use This Guide Link: Be sure to read this
-- A schedule of the course: when you click on "Hello World", this will start to walk you through the course.
-
-At least a day before teaching the class, be sure to read all of this document and the instructor guide (INSTRUCTIONS.md) which will give you notes about the course content and how to teach the class successfully.
-
-## Course Description
+# Overview
 
 This 4-hour course is an introduction to JavaScript for software developers. The course gives developers the fundamentals they need to take the next steps with JavaScript frameworks and libraries. There's often a temptation to skip the fundamentals and to jump right into advanced concepts. This course will provide a foundation in four hours and equip engineers with what they need to make a positive impact on JavaScript projects.
+
+JavaScript is everywhere, and it can at times be hard to understand where the JavaScript starts and the frameworks begin. It's also tricky to understand differences between the browser and the server and how pre-processing works. The good news is that the actual surface area of JavaScript is fairly small. The course will introduce students to the ecosystem and provide context about how everything fits together.
 
 ## Course Goals
 
@@ -42,6 +22,8 @@ The course is broken down into 4 parts: three sections and a longer lab activity
 - Lab Activity: Putting it all together with a lab project to build a web server with Node.js.
 
 ## Course Times
+
+Timing is one the most important features of a successful class. Sometimes you will be able to cover a lot of ground. Sometimes you'll only be able to cover required topics. Every class is different. It's most important to honor the scheduled breaks and end times - move on when it's time to move on!
 
 The following is a schedule for online and in-person deliveries:
 
