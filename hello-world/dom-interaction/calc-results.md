@@ -9,7 +9,7 @@ Remember the ternary statement. We can use this to return the correct value as a
 ```javascript
 button.onclick = function () {
   const results =
-    inputName.value > jsAge
+    inputAge.value > jsAge
       ? `${inputName.value} is older than JavaScript`
       : `${inputName.value} is younger than JavaScript`;
 
