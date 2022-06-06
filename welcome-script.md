@@ -1,14 +1,12 @@
 # JavaScript for the Job
 
-JavaScript... that's an easy language right? At least that's what you said when you took the job. They may have hired you as a systems engineer for you c++ skills, but you're also expected to be proficient with JavaScript. You may have got the job with your UX skills, or you may be hot with css... but if you really want to be successful, you need to know JavaScript, and probably React. Maybe you want a job? Guess what? Confidence with JavaScript is what's going to make you a sought after candidate. There is no way around this, the skills that you need to succeed at your job today require you to know JavaScript.
+JavaScript... that's pretty easy right. They may have hired you as a systems engineer for you c++ skills, but you're also expected to be proficient with JavaScript. You may have got the job with your UX skills, or you may be hot with css... but if you really want to be successful, you need to know JavaScript.
 
-Hi, I'm Eve Porcello, and today's your lucky day, because we've put together a course to teach you the JavaScript that you need to know in order to get your job done. To be really hot with React, GraphQL, Apollo, even Web 3, you need to understand what is going on when you build and deploy your application. To debug code, you need to know where it is running on the stack, and what the difference is between JavaScript that runs in the browser, or JavaScript that runs on a server. To do anything, you need to know your way around NPM. You need to know how to how to install reusable libraries and execute NPM scripts.
+Hi, I'm Eve Porcello, and today's your lucky day, because we've put together a course to teach you the JavaScript that you need to know in order to get your job done. To be really successful later with React, Vue, or Svelte, you need to understand what is going on when you build and deploy your application. To debug code, you need to know where it is running on the stack, and what the difference is between JavaScript that runs in the browser, or JavaScript that runs on a server. To do anything, you need to know your way around NPM. You need to know how to how to install reusable libraries and execute NPM scripts.
 
-That's why we're really excited about this course here at Moon Highway. We put together a list of the essential foundational skills that are required to be successful with JavaScript in the workplace, so that you can make sense of what is going on. Having these skills in place will make your work with React, GraphQL, or any JavaScript library more enjoyable... maybe even fun.
+That's why we're really excited about this course here. We're basing this curriculum on over a decade of teaching JavaScript to engineers at enterprise companies. Having these skills in place will make your work with React, GraphQL, or any JavaScript library more enjoyable... maybe even fun.
 
-So... JavaScript... an easy language? Well yea, if you have the proper foundation it is.
-
-I want to show you what I've learned, so you can actually enjoy being successful at your job.
+I want to show you what I've learned, so you can actually enjoy it while being successful at your job. Let's get into it.
 
 ## Conclusion
 
