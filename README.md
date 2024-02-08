@@ -12,6 +12,11 @@ npm install
 npm start
 ```
 
+**If this doesn't work, or you get an error when installing**
+
+1. Still try running npm start.
+2. OR: run npx @moonhighway/timesplitter
+
 This will run Timesplitter on `localhost:4224` in the browser. When you click the **Start** link in the lower right hand corner of the screen, you'll see the Table of Contents. This gives you the following:
 
 - Course Overview Link
