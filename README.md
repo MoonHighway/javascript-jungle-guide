@@ -58,16 +58,3 @@ _Adjust the timing based on start time_
 | 11:30-12:30 | Teaching Block #3 | 1hr    |
 | 12:30-1:00  | SuperLab          | 30min  |
 | 1:00        | End               |        |
-
-### In-Person Schedule
-
-| Time        | Activity          | Length   |
-| ----------- | ----------------- | -------- |
-| 9:00-10:20  | Teaching Block #1 | 1hr20min |
-| 10:20-10:40 | Break             | 20min    |
-| 10:40-12:00 | Teaching Block #2 | 1hr20min |
-| 12:00-1:00  | Lunch             | 1hr      |
-| 1:00-2:20   | Teaching Block #3 | 1hr20min |
-| 2:20-2:40   | Break             | 20min    |
-| 2:40-3:30   | SuperLab          | 50min    |
-| 4:00        | End               |          |
