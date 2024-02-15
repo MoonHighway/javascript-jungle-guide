@@ -7,7 +7,7 @@
     "develop": "timesplitter-dev"
   },
   "dependencies": {
-    "@moonhighway/timesplitter": "^0.0.6",
-    "@moonhighway/timesplitter-dev": "^0.0.6"
+    "@moonhighway/timesplitter": "0.0.7",
+    "@moonhighway/timesplitter-dev": "0.0.7"
   }
 }
